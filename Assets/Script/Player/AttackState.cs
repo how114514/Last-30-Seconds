@@ -2,7 +2,8 @@ using UnityEngine;
 
 /// <summary>
 /// Attack state: plays attack animation, blocks movement + facing.
-/// Returns to Idle when the animation finishes (normalizedTime >= 1).
+/// When animation finishes: if a buffered attack was pressed, re-enter Attack;
+/// otherwise return to Idle.
 /// </summary>
 public class AttackState : IPlayerState
 {
@@ -26,11 +27,20 @@ public class AttackState : IPlayerState
     {
         var stateInfo = m_Fsm.Animation.CurrentAnimState;
 
-        // Attack clip finished — Animator won't leave this state on its own
-        // (no transitions), so we check normalizedTime directly.
         if (stateInfo.shortNameHash == s_AttackHash && stateInfo.normalizedTime >= 1f)
         {
-            m_Fsm.TransitionTo(PlayerStateType.Idle);
+            // Animation finished → always spawn slash wave
+            Player.Instance.SpawnSlashWave();
+
+            if (m_Fsm.HasAttackBuffered)
+            {
+                m_Fsm.ConsumeAttackBuffer();
+                m_Fsm.Animation.PlayAttack();
+            }
+            else
+            {
+                m_Fsm.TransitionTo(PlayerStateType.Idle);
+            }
         }
     }
 

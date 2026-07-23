@@ -29,7 +29,15 @@ public class HurtState : IPlayerState
 
         if (stateInfo.shortNameHash == s_HurtHash && stateInfo.normalizedTime >= 1f)
         {
-            m_Fsm.TransitionTo(PlayerStateType.Idle);
+            if (m_Fsm.HasAttackBuffered)
+            {
+                m_Fsm.ConsumeAttackBuffer();
+                m_Fsm.TransitionTo(PlayerStateType.Attack);
+            }
+            else
+            {
+                m_Fsm.TransitionTo(PlayerStateType.Idle);
+            }
         }
     }
 

@@ -11,11 +11,6 @@ public interface IPlayerState
     void Exit();
 }
 
-/// <summary>
-/// State machine: creates states on Awake, then Initialize() subscribes
-/// to input and explicitly enters the Idle state. Nothing relies on
-/// implicit Start timing.
-/// </summary>
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerAnimation))]
 public class PlayerStateMachine : MonoBehaviour
@@ -28,6 +23,9 @@ public class PlayerStateMachine : MonoBehaviour
     private PlayerAnimation m_Animation;
     private InputSystem_Actions m_InputActions;
     private bool m_Initialized;
+
+    public bool HasAttackBuffered { get; private set; }
+    public void ConsumeAttackBuffer() => HasAttackBuffered = false;
 
     public PlayerStateType CurrentStateType => m_CurrentStateType;
     public PlayerMovement Movement => m_Movement;
@@ -45,10 +43,6 @@ public class PlayerStateMachine : MonoBehaviour
         m_States[PlayerStateType.Hurt]   = new HurtState(this);
     }
 
-    /// <summary>
-    /// Called by Player.Start — wires input and explicitly enters Idle.
-    /// By this point all component Awakes have run, so cross-references are safe.
-    /// </summary>
     public void Initialize(InputSystem_Actions inputActions)
     {
         if (m_Initialized) return;
@@ -56,7 +50,6 @@ public class PlayerStateMachine : MonoBehaviour
         m_InputActions = inputActions;
         m_InputActions.Player.Attack.performed += OnAttackPerformed;
 
-        // Explicitly enter the default state
         m_CurrentStateType = PlayerStateType.Idle;
         m_CurrentState = m_States[PlayerStateType.Idle];
         m_CurrentState.Enter();
@@ -91,7 +84,12 @@ public class PlayerStateMachine : MonoBehaviour
     {
         if (m_CurrentStateType == PlayerStateType.Idle || m_CurrentStateType == PlayerStateType.Move)
         {
+            HasAttackBuffered = false;
             TransitionTo(PlayerStateType.Attack);
+        }
+        else
+        {
+            HasAttackBuffered = true;
         }
     }
 }

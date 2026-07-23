@@ -8,6 +8,9 @@ public class PlayerScore : MonoBehaviour, IDamageable
 {
     [SerializeField] private int m_CurrentScore;
 
+    [Header("Dodge")]
+    [SerializeField] private float m_DodgeRate;
+
     private PlayerStateMachine m_StateMachine;
 
     public int CurrentScore => m_CurrentScore;
@@ -27,6 +30,8 @@ public class PlayerScore : MonoBehaviour, IDamageable
     public void TakeDamage(int amount)
     {
         if (amount <= 0) return;
+
+        if (Random.value < m_DodgeRate) return;
 
         m_CurrentScore = Mathf.Max(0, m_CurrentScore - amount);
 

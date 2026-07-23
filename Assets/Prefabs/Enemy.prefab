@@ -204,3 +204,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_UseTrigger: 0
+  m_KnockbackForce: 20

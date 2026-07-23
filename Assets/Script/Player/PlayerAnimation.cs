@@ -8,6 +8,9 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerAnimation : MonoBehaviour
 {
+    [Header("Speed")]
+    [SerializeField] private float m_AttackSpeed = 1f;
+
     private Animator m_Animator;
     private bool m_FacingLocked;
 
@@ -25,10 +28,29 @@ public class PlayerAnimation : MonoBehaviour
 
     // ── Animation commands ──────────────────────────────────────────
 
-    public void PlayIdle()   => m_Animator.Play(s_IdleHash);
-    public void PlayMove()   => m_Animator.Play(s_MoveHash);
-    public void PlayAttack() => m_Animator.Play(s_AttackHash);
-    public void PlayHurt()   => m_Animator.Play(s_HurtHash);
+    public void PlayIdle()
+    {
+        m_Animator.speed = 1f;
+        m_Animator.Play(s_IdleHash, 0, 0f);
+    }
+
+    public void PlayMove()
+    {
+        m_Animator.speed = 1f;
+        m_Animator.Play(s_MoveHash, 0, 0f);
+    }
+
+    public void PlayAttack()
+    {
+        m_Animator.speed = m_AttackSpeed;
+        m_Animator.Play(s_AttackHash, 0, 0f);
+    }
+
+    public void PlayHurt()
+    {
+        m_Animator.speed = 1f;
+        m_Animator.Play(s_HurtHash, 0, 0f);
+    }
 
     // ── Facing ──────────────────────────────────────────────────────
 
