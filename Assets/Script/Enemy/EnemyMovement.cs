@@ -36,6 +36,8 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.IsGameOver) return;
+
         // Don't apply movement while stunned — let knockback play out
         if (m_StunTimer > 0f)
         {

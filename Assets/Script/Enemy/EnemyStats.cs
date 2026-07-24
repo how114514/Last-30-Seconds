@@ -68,7 +68,12 @@ public class EnemyStats : MonoBehaviour, IDamageable
         if (m_PlayerScore != null)
             m_PlayerScore.AddScore(m_ScoreReward);
 
-        // TODO: play death animation / effects here
+        Destroy(gameObject);
+    }
+
+    /// <summary>Destroy without awarding score — used at game end.</summary>
+    public void DieSilently()
+    {
         Destroy(gameObject);
     }
 }

@@ -1,14 +1,18 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// Countdown timer displayed via TextMeshPro.
 /// Format: M:SS.mmm. Flashes red in the last 5 seconds.
-/// Pauses the game when time runs out.
+/// When time runs out: stops the game and opens the upgrade panel.
 /// </summary>
 [RequireComponent(typeof(TMP_Text))]
 public class CountdownTimer : MonoBehaviour
 {
+    [Header("End Game")]
+    [SerializeField] private GameObject m_UpgradePanel;
+
     [Header("Settings")]
     [SerializeField] private float m_StartTime = 30f;
     [SerializeField] private float m_FlashThreshold = 5f;
@@ -25,29 +29,75 @@ public class CountdownTimer : MonoBehaviour
     private void Awake()
     {
         m_Text = GetComponent<TMP_Text>();
+        ResetTimer();
+    }
+
+    /// <summary>Reset to initial state, ready for a new round.</summary>
+    public void ResetTimer()
+    {
         m_Remaining = m_StartTime;
+        m_Running = false;
+        m_FlashTimer = 0f;
         m_Text.color = k_NormalColor;
+        UpdateDisplay();
     }
 
     private void Update()
     {
-        if (!m_Running) return;
+        // Wait for any key press to start
+        if (!m_Running)
+        {
+            if (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame)
+            {
+                m_Running = true;
+                GameManager.HasStarted = true;
+            }
+            return;
+        }
 
-        m_Remaining -= Time.deltaTime;
+        float dt = Time.unscaledDeltaTime;
+        m_Remaining -= dt;
 
         if (m_Remaining <= 0f)
         {
             m_Remaining = 0f;
             m_Running = false;
             m_Text.color = k_FlashColor;
-            Time.timeScale = 0f;
+            EndGame();
+            return;
         }
-        else if (m_Remaining <= m_FlashThreshold)
+
+        if (m_Remaining <= m_FlashThreshold)
         {
-            m_FlashTimer += Time.deltaTime;
+            m_FlashTimer += dt;
             m_Text.color = (int)(m_FlashTimer / m_FlashInterval) % 2 == 0
                 ? k_FlashColor
                 : k_NormalColor;
+        }
+
+        UpdateDisplay();
+    }
+
+    private void EndGame()
+    {
+        GameManager.IsGameOver = true;
+
+        if (Player.Instance != null)
+        {
+            var fsm = Player.Instance.GetComponent<PlayerStateMachine>();
+            if (fsm != null) fsm.OnGameEnd();
+        }
+
+        if (m_UpgradePanel != null)
+            m_UpgradePanel.SetActive(true);
+
+        foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+        {
+            var stats = enemy.GetComponent<EnemyStats>();
+            if (stats != null)
+                stats.DieSilently();
+            else
+                Destroy(enemy);
         }
 
         UpdateDisplay();

@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7abb53af923ed24ba303fa3f973d9e3, type: 3}
+  m_Name: UpgradeData
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  attackDamage:
+    dimensionName: Attack Damage
+    description: 1
+    type: 1
+    currentLevel: 4
+    stages:
+    - floatValue: 1
+      intValue: 1
+      boolValue: 0
+      price: 0
+    - floatValue: 2
+      intValue: 2
+      boolValue: 0
+      price: 5
+    - floatValue: 3
+      intValue: 3
+      boolValue: 0
+      price: 5
+    - floatValue: 4
+      intValue: 4
+      boolValue: 0
+      price: 5
+    - floatValue: 5
+      intValue: 5
+      boolValue: 0
+      price: 5
+  attackSpeed:
+    dimensionName: Attack Speed
+    description: 2
+    type: 0
+    currentLevel: 4
+    stages:
+    - floatValue: 1
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 1.5
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 2
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 2.5
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 5
+  spawnSlashWave:
+    dimensionName: Spawn SlashWave
+    description: 3
+    type: 2
+    currentLevel: 1
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 0
+      boolValue: 1
+      price: 5
+  slashWaveDamage:
+    dimensionName: SlashWaveDamage
+    description: 4
+    type: 1
+    currentLevel: 3
+    stages:
+    - floatValue: 0
+      intValue: 10
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 20
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 30
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 40
+      boolValue: 0
+      price: 10
+  slashWaveSize:
+    dimensionName: SlashWave Size
+    description: 5
+    type: 0
+    currentLevel: 4
+    stages:
+    - floatValue: 2
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 4
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 6
+      intValue: 0
+      boolValue: 0
+      price: 5
+  movementSpeed:
+    dimensionName: Movement Speed
+    description: 6
+    type: 0
+    currentLevel: 4
+    stages:
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 6
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 7
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 8
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 9
+      intValue: 0
+      boolValue: 0
+      price: 5
+  dodgeChance:
+    dimensionName: Dodge Chance
+    description: 7
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 0.2
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 0.4
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 0.6
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 0.8
+      intValue: 0
+      boolValue: 0
+      price: 5
+  resourceMultiplier:
+    dimensionName: Resource Multiplier
+    description: 8
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 1
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 2
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 4
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 5
+  passiveIncome:
+    dimensionName: Passive Income
+    description: 9
+    type: 1
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 4
+      boolValue: 0
+      price: 5
+  enemySpawnInterval:
+    dimensionName: Enemy Spawn Interval
+    description: 10
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 4
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 2
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 1
+      intValue: 0
+      boolValue: 0
+      price: 5
+  enemySpawnCount:
+    dimensionName: Enemy Spawn Count
+    description: 11
+    type: 1
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 4
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 5
+      boolValue: 0
+      price: 5
+  enemySpawnPoints:
+    dimensionName: Enemy Spawn Points
+    description: 12
+    type: 1
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 4
+      boolValue: 0
+      price: 10
+  enemyVariety:
+    dimensionName: Enemy Variety
+    description: 13
+    type: 1
+    currentLevel: 2
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 10
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 10

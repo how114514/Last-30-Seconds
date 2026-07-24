@@ -9,12 +9,11 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private float m_MoveSpeed = 5f;
-
     private Rigidbody2D m_Rigidbody;
     private InputAction m_MoveAction;
     private bool m_Blocked;
+
+    private float MoveSpeed => RuntimeData.Instance != null ? RuntimeData.Instance.movementSpeed : 5f;
 
     /// <summary>Horizontal-only input (A/D keys).</summary>
     public Vector2 MoveInput
@@ -44,13 +43,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (m_Blocked)
+        if (GameManager.IsGameOver || m_Blocked)
         {
             m_Rigidbody.linearVelocity = Vector2.zero;
             return;
         }
 
-        m_Rigidbody.linearVelocity = MoveInput * m_MoveSpeed;
+        m_Rigidbody.linearVelocity = MoveInput * MoveSpeed;
     }
 
     public void BlockMovement()   => m_Blocked = true;

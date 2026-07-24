@@ -8,10 +8,29 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class DamageDealer : MonoBehaviour
 {
+    public enum DamageSource { Fixed, RuntimeAttack, RuntimeSlashWave }
+
     [Header("Damage")]
-    [SerializeField] private int m_Damage = 10;
+    private int m_Damage;
+    [SerializeField] private DamageSource m_DamageSource;
 
     public void SetDamage(int damage) => m_Damage = damage;
+    public void SetDamageSource(DamageSource source) => m_DamageSource = source;
+
+    private int EffectiveDamage
+    {
+        get
+        {
+            if (RuntimeData.Instance == null) return m_Damage;
+
+            return m_DamageSource switch
+            {
+                DamageSource.RuntimeAttack    => RuntimeData.Instance.attackDamage,
+                DamageSource.RuntimeSlashWave => RuntimeData.Instance.slashWaveDamage,
+                _                            => m_Damage
+            };
+        }
+    }
 
     [Header("Target")]
     [SerializeField] private LayerMask m_TargetLayer;
@@ -53,7 +72,7 @@ public class DamageDealer : MonoBehaviour
         var damageable = target.GetComponent<IDamageable>();
         if (damageable == null) return false;
 
-        damageable.TakeDamage(m_Damage);
+        damageable.TakeDamage(EffectiveDamage);
         return true;
     }
 }

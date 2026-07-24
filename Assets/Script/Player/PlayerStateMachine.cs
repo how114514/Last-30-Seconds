@@ -60,6 +60,7 @@ public class PlayerStateMachine : MonoBehaviour
     private void Update()
     {
         if (!m_Initialized) return;
+        if (GameManager.IsGameOver) return;
         m_CurrentState?.Update();
     }
 
@@ -82,6 +83,8 @@ public class PlayerStateMachine : MonoBehaviour
 
     private void OnAttackPerformed(InputAction.CallbackContext context)
     {
+        if (GameManager.IsGameOver) return;
+
         if (m_CurrentStateType == PlayerStateType.Idle || m_CurrentStateType == PlayerStateType.Move)
         {
             HasAttackBuffered = false;
@@ -91,5 +94,11 @@ public class PlayerStateMachine : MonoBehaviour
         {
             HasAttackBuffered = true;
         }
+    }
+
+    /// <summary>Called by CountdownTimer when time runs out.</summary>
+    public void OnGameEnd()
+    {
+        TransitionTo(PlayerStateType.Idle);
     }
 }

@@ -8,9 +8,6 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerAnimation : MonoBehaviour
 {
-    [Header("Speed")]
-    [SerializeField] private float m_AttackSpeed = 1f;
-
     private Animator m_Animator;
     private bool m_FacingLocked;
 
@@ -42,7 +39,7 @@ public class PlayerAnimation : MonoBehaviour
 
     public void PlayAttack()
     {
-        m_Animator.speed = m_AttackSpeed;
+        m_Animator.speed = RuntimeData.Instance != null ? RuntimeData.Instance.attackSpeed : 1f;
         m_Animator.Play(s_AttackHash, 0, 0f);
     }
 

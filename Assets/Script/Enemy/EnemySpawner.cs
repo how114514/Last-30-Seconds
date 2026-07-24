@@ -12,10 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Data Pool")]
     [SerializeField] private List<EnemyData> m_DataList;
-
-    [Header("Spawn Settings")]
-    [SerializeField] private float m_SpawnInterval = 3f;
-    [SerializeField] private int m_SpawnCount = 1;
+    [SerializeField] private int m_VarietySize = 3;
 
     [Header("Spawn Point")]
     [SerializeField] private Transform m_SpawnPoint;
@@ -27,16 +24,21 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnLoop()
     {
-        while (true)
+        yield return new WaitUntil(() => GameManager.HasStarted);
+
+        while (!GameManager.IsGameOver)
         {
-            for (int i = 0; i < m_SpawnCount; i++)
+            int count = RuntimeData.Instance != null ? RuntimeData.Instance.enemySpawnCount : 1;
+            float interval = RuntimeData.Instance != null ? RuntimeData.Instance.enemySpawnInterval : 3f;
+
+            for (int i = 0; i < count && !GameManager.IsGameOver; i++)
             {
                 Spawn();
-                if (m_SpawnCount > 1)
+                if (count > 1)
                     yield return new WaitForSeconds(0.1f);
             }
 
-            yield return new WaitForSeconds(m_SpawnInterval);
+            yield return new WaitForSeconds(interval);
         }
     }
 
@@ -66,25 +68,33 @@ public class EnemySpawner : MonoBehaviour
         return enemy;
     }
 
+    /// <summary>Get the active spawn pool (sliding window of m_VarietySize).</summary>
+    private List<EnemyData> GetActivePool()
+    {
+        int variety = RuntimeData.Instance != null ? RuntimeData.Instance.enemyVariety : 0;
+        int start = Mathf.Clamp(variety, 0, m_DataList.Count - m_VarietySize);
+        return m_DataList.GetRange(start, m_VarietySize);
+    }
+
     private EnemyData PickRandom()
     {
-        if (m_DataList == null || m_DataList.Count == 0) return null;
-        if (m_DataList.Count == 1) return m_DataList[0];
+        var pool = GetActivePool();
+        if (pool == null || pool.Count == 0) return null;
 
         float totalWeight = 0f;
-        foreach (var d in m_DataList)
+        foreach (var d in pool)
             totalWeight += d.spawnWeight;
 
         float roll = Random.Range(0f, totalWeight);
         float cumulative = 0f;
 
-        foreach (var d in m_DataList)
+        foreach (var d in pool)
         {
             cumulative += d.spawnWeight;
             if (roll <= cumulative)
                 return d;
         }
 
-        return m_DataList[^1];
+        return pool[^1];
     }
 }
