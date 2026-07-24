@@ -65,7 +65,14 @@ public class RuntimeData : MonoBehaviour
         enemyVariety       = GetInt(m_UpgradeData.enemyVariety);
     }
 
-    private int   GetInt(UpgradeDimension d)   => d?.stages[d.currentLevel].intValue   ?? 0;
-    private float GetFloat(UpgradeDimension d) => d?.stages[d.currentLevel].floatValue ?? 0f;
-    private bool  GetBool(UpgradeDimension d)  => d?.stages[d.currentLevel].boolValue  ?? false;
+    private int   GetInt(UpgradeDimension d)   => GetStage(d)?.intValue   ?? 0;
+    private float GetFloat(UpgradeDimension d) => GetStage(d)?.floatValue ?? 0f;
+    private bool  GetBool(UpgradeDimension d)  => GetStage(d)?.boolValue  ?? false;
+
+    private UpgradeStage GetStage(UpgradeDimension d)
+    {
+        if (d == null || d.stages == null || d.stages.Length == 0) return null;
+        int i = Mathf.Clamp(d.currentLevel, 0, d.stages.Length - 1);
+        return d.stages[i];
+    }
 }

@@ -42,7 +42,7 @@ MonoBehaviour:
     dimensionName: Attack Speed
     description: 2
     type: 0
-    currentLevel: 4
+    currentLevel: 1
     stages:
     - floatValue: 1
       intValue: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     dimensionName: Spawn SlashWave
     description: 3
     type: 2
-    currentLevel: 1
+    currentLevel: 0
     stages:
     - floatValue: 0
       intValue: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     dimensionName: SlashWaveDamage
     description: 4
     type: 1
-    currentLevel: 3
+    currentLevel: 0
     stages:
     - floatValue: 0
       intValue: 10
@@ -104,7 +104,7 @@ MonoBehaviour:
     dimensionName: SlashWave Size
     description: 5
     type: 0
-    currentLevel: 4
+    currentLevel: 1
     stages:
     - floatValue: 2
       intValue: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
     dimensionName: Resource Multiplier
     description: 8
     type: 0
-    currentLevel: 0
+    currentLevel: 1
     stages:
     - floatValue: 1
       intValue: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
     dimensionName: Passive Income
     description: 9
     type: 1
-    currentLevel: 0
+    currentLevel: 1
     stages:
     - floatValue: 0
       intValue: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
     dimensionName: Enemy Spawn Interval
     description: 10
     type: 0
-    currentLevel: 0
+    currentLevel: 2
     stages:
     - floatValue: 5
       intValue: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
     dimensionName: Enemy Spawn Count
     description: 11
     type: 1
-    currentLevel: 0
+    currentLevel: 1
     stages:
     - floatValue: 0
       intValue: 1
@@ -286,7 +286,7 @@ MonoBehaviour:
     dimensionName: Enemy Spawn Points
     description: 12
     type: 1
-    currentLevel: 0
+    currentLevel: 1
     stages:
     - floatValue: 0
       intValue: 1

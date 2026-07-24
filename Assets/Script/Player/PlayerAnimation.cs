@@ -8,6 +8,10 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerAnimation : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioClip m_AttackSound;
+
     private Animator m_Animator;
     private bool m_FacingLocked;
 
@@ -41,6 +45,9 @@ public class PlayerAnimation : MonoBehaviour
     {
         m_Animator.speed = RuntimeData.Instance != null ? RuntimeData.Instance.attackSpeed : 1f;
         m_Animator.Play(s_AttackHash, 0, 0f);
+
+        if (m_AudioSource != null && m_AttackSound != null)
+            m_AudioSource.PlayOneShot(m_AttackSound);
     }
 
     public void PlayHurt()

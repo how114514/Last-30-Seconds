@@ -13,7 +13,17 @@ public class EnemyStats : MonoBehaviour, IDamageable
     [Header("Reward")]
     [SerializeField] private int m_ScoreReward = 10;
 
+    [Header("Feedback")]
+    [SerializeField] private float m_FlashDuration = 0.1f;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioClip m_HurtSound;
+    [SerializeField] private AudioClip m_DeathSound;
+
     private PlayerScore m_PlayerScore;
+    private SpriteRenderer m_SpriteRenderer;
+    private Coroutine m_FlashRoutine;
 
     public int MaxHealth => m_MaxHealth;
     public int CurrentHealth => m_CurrentHealth;
@@ -22,6 +32,7 @@ public class EnemyStats : MonoBehaviour, IDamageable
     private void Awake()
     {
         m_CurrentHealth = m_MaxHealth;
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -56,6 +67,10 @@ public class EnemyStats : MonoBehaviour, IDamageable
         if (IsDead) return;
 
         m_CurrentHealth = Mathf.Max(0, m_CurrentHealth - amount);
+        StartFlash();
+
+        if (m_AudioSource != null && m_HurtSound != null)
+            m_AudioSource.PlayOneShot(m_HurtSound);
 
         if (m_CurrentHealth <= 0)
         {
@@ -68,7 +83,30 @@ public class EnemyStats : MonoBehaviour, IDamageable
         if (m_PlayerScore != null)
             m_PlayerScore.AddScore(m_ScoreReward);
 
-        Destroy(gameObject);
+        // Disable collider + movement so the corpse stays briefly for the sound
+        var col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+        var move = GetComponent<EnemyMovement>();
+        if (move != null) move.enabled = false;
+
+        if (m_AudioSource != null && m_DeathSound != null)
+            m_AudioSource.PlayOneShot(m_DeathSound);
+
+        Destroy(gameObject, 0.5f);
+    }
+
+    private void StartFlash()
+    {
+        if (m_SpriteRenderer == null) return;
+        if (m_FlashRoutine != null) StopCoroutine(m_FlashRoutine);
+        m_FlashRoutine = StartCoroutine(FlashRoutine());
+    }
+
+    private System.Collections.IEnumerator FlashRoutine()
+    {
+        m_SpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(m_FlashDuration);
+        m_SpriteRenderer.color = Color.white;
     }
 
     /// <summary>Destroy without awarding score — used at game end.</summary>

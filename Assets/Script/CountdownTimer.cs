@@ -18,12 +18,18 @@ public class CountdownTimer : MonoBehaviour
     [SerializeField] private float m_FlashThreshold = 5f;
     [SerializeField] private float m_FlashInterval = 0.25f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioClip m_BeepSound;
+    [SerializeField] private float m_BeepOffset = 100f;
+
     private TMP_Text m_Text;
     private float m_Remaining;
     private float m_FlashTimer;
+    private int m_PrevSecond;
     private bool m_Running = true;
 
-    private static readonly Color k_NormalColor = Color.white;
+    private static readonly Color k_NormalColor = Color.black;
     private static readonly Color k_FlashColor  = new(1f, 0.2f, 0.2f, 1f);
 
     private void Awake()
@@ -38,6 +44,7 @@ public class CountdownTimer : MonoBehaviour
         m_Remaining = m_StartTime;
         m_Running = false;
         m_FlashTimer = 0f;
+        m_PrevSecond = Mathf.CeilToInt(m_StartTime);
         m_Text.color = k_NormalColor;
         UpdateDisplay();
     }
@@ -65,6 +72,20 @@ public class CountdownTimer : MonoBehaviour
             m_Text.color = k_FlashColor;
             EndGame();
             return;
+        }
+
+        // Beep at seconds 5,4,3,2,1 (offset to account for audio latency)
+        float adjusted = m_Remaining - m_BeepOffset;
+        int currentSecond = Mathf.FloorToInt(adjusted);
+
+        if (currentSecond != m_PrevSecond)
+        {
+            m_PrevSecond = currentSecond;
+            if (currentSecond >= 0 && currentSecond < m_FlashThreshold
+                && m_AudioSource != null && m_BeepSound != null)
+            {
+                m_AudioSource.PlayOneShot(m_BeepSound);
+            }
         }
 
         if (m_Remaining <= m_FlashThreshold)

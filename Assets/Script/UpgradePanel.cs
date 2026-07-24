@@ -31,6 +31,10 @@ public class UpgradePanel : MonoBehaviour
     [SerializeField] private Button m_WithdrawButton;
     [SerializeField] private Button m_CloseButton;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioClip m_ClickSound;
+
     // Combined button index (spawnSlashWave → slashWaveDamage)
     private const int COMBINED_INDEX = 2;
 
@@ -68,6 +72,12 @@ public class UpgradePanel : MonoBehaviour
         SelectButton(0);
     }
 
+    private void PlayClick()
+    {
+        if (m_AudioSource != null && m_ClickSound != null)
+            m_AudioSource.PlayOneShot(m_ClickSound);
+    }
+
     // ── Currency ─────────────────────────────────────────────────────
 
     public bool Spend(int amount)
@@ -99,6 +109,7 @@ public class UpgradePanel : MonoBehaviour
 
     private void SelectButton(int index)
     {
+        PlayClick();
         m_SelectedIndex = index;
         m_SelectedDim = GetDimensionForIndex(index);
         RefreshDisplay();
@@ -155,6 +166,7 @@ public class UpgradePanel : MonoBehaviour
         int cost = m_SelectedDim.stages[nextLevel].price;
         if (!Spend(cost)) return;
 
+        PlayClick();
         m_SelectedDim.currentLevel = nextLevel;
 
         if (RuntimeData.Instance != null)
@@ -173,6 +185,7 @@ public class UpgradePanel : MonoBehaviour
         if (m_SelectedDim == null) return;
         if (m_SelectedDim.currentLevel <= 0) return;
 
+        PlayClick();
         m_SelectedDim.currentLevel--;
 
         if (RuntimeData.Instance != null)
@@ -186,6 +199,7 @@ public class UpgradePanel : MonoBehaviour
 
     private void OnCloseClicked()
     {
+        PlayClick();
         if (m_LoadSceneManager != null)
             m_LoadSceneManager.ReloadGameScene();
     }

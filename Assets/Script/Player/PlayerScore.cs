@@ -31,7 +31,7 @@ public class PlayerScore : MonoBehaviour, IDamageable
         {
             m_ScoreTimer -= 1f;
             int passive = RuntimeData.Instance != null ? RuntimeData.Instance.passiveIncome : 0;
-            m_CurrentScore += Mathf.RoundToInt(passive * ResourceMultiplier);
+            m_CurrentScore += Mathf.FloorToInt(passive * ResourceMultiplier);
         }
     }
 
@@ -39,7 +39,7 @@ public class PlayerScore : MonoBehaviour, IDamageable
     public void AddScore(int amount)
     {
         if (amount <= 0) return;
-        m_CurrentScore += Mathf.RoundToInt(amount * ResourceMultiplier);
+        m_CurrentScore += Mathf.FloorToInt(amount * ResourceMultiplier);
     }
 
     public void TakeDamage(int amount)
