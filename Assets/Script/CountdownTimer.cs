@@ -12,6 +12,7 @@ public class CountdownTimer : MonoBehaviour
 {
     [Header("End Game")]
     [SerializeField] private GameObject m_UpgradePanel;
+    [SerializeField] private GameObject m_VictoryPanel;
 
     [Header("Settings")]
     [SerializeField] private float m_StartTime = 30f;
@@ -49,12 +50,51 @@ public class CountdownTimer : MonoBehaviour
         UpdateDisplay();
     }
 
+    /// <summary>Boss 1/2 killed — force timer to 0 so it triggers EndGame naturally.</summary>
+    public void ForceEnd()
+    {
+        m_Remaining = 0f;
+        m_Running = false;
+        m_Text.color = k_NormalColor;
+        UpdateDisplay();
+        EndGame();
+    }
+
+    /// <summary>Boss 3 killed — game victory.</summary>
+    public void BossWin()
+    {
+        m_Running = false;
+        m_Text.color = k_NormalColor;
+        m_Remaining = 0f;
+        UpdateDisplay();
+
+        GameManager.IsGameOver = true;
+
+        if (Player.Instance != null)
+        {
+            var fsm = Player.Instance.GetComponent<PlayerStateMachine>();
+            if (fsm != null) fsm.OnGameEnd();
+        }
+
+        if (m_VictoryPanel != null)
+            m_VictoryPanel.SetActive(true);
+
+        foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+        {
+            var stats = enemy.GetComponent<EnemyStats>();
+            if (stats != null) stats.DieSilently();
+            else Destroy(enemy);
+        }
+    }
+
     private void Update()
     {
         // Wait for any key press to start
         if (!m_Running)
         {
-            if (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame)
+            if (!GameManager.IsGameOver
+                && Keyboard.current != null
+                && Keyboard.current.anyKey.wasPressedThisFrame)
             {
                 m_Running = true;
                 GameManager.HasStarted = true;

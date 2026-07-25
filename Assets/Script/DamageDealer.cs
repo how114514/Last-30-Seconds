@@ -14,6 +14,9 @@ public class DamageDealer : MonoBehaviour
     private int m_Damage;
     [SerializeField] private DamageSource m_DamageSource;
 
+    /// <summary>Set by EnemyStats when the enemy is a boss. Causes instant kill + scene reload.</summary>
+    public bool isBossAttack;
+
     public void SetDamage(int damage) => m_Damage = damage;
     public void SetDamageSource(DamageSource source) => m_DamageSource = source;
 
@@ -68,6 +71,13 @@ public class DamageDealer : MonoBehaviour
     private bool DealDamage(GameObject target)
     {
         if ((m_TargetLayer & (1 << target.layer)) == 0) return false;
+
+        if (isBossAttack)
+        {
+            if (LoadSceneManager.Instance != null)
+                LoadSceneManager.Instance.DelayedReload();
+            return true;
+        }
 
         var damageable = target.GetComponent<IDamageable>();
         if (damageable == null) return false;

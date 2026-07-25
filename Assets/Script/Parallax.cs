@@ -21,6 +21,13 @@ public class Parallax : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (m_Camera == null)
+        {
+            m_Camera = Camera.main?.transform;
+            if (m_Camera == null) return;
+            m_CameraStartX = m_Camera.position.x;
+        }
+
         float deltaX = m_Camera.position.x - m_CameraStartX;
         var pos = transform.position;
         pos.x = m_StartX + deltaX * m_Coefficient;

@@ -16,7 +16,6 @@ public class FadePanel : MonoBehaviour
     private void Awake()
     {
         m_Image = GetComponent<Image>();
-        DontDestroyOnLoad(gameObject);
     }
 
     /// <summary>Fade to black. Returns the tween so callers can wait on it.</summary>
@@ -29,8 +28,7 @@ public class FadePanel : MonoBehaviour
     /// <summary>Fade to clear. Returns the tween so callers can wait on it.</summary>
     public Tween FadeIn()
     {
-        return m_Image.DOFade(0f, m_FadeDuration)
-            .SetUpdate(true)
-            .OnComplete(() => m_Image.raycastTarget = false);
+        m_Image.raycastTarget = false;
+        return m_Image.DOFade(0f, m_FadeDuration).SetUpdate(true);
     }
 }

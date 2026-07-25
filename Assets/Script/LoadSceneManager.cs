@@ -1,59 +1,124 @@
+using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Manages GameScene loading with fade transitions.
+/// Loads/unloads GameScene via Addressables.
+/// Load-before-unload: avoids the blank frame between scenes.
 /// </summary>
 public class LoadSceneManager : MonoBehaviour
 {
-    [SerializeField] private string m_GameSceneName = "GameScene";
+    [SerializeField] private string m_GameSceneKey = "GameScene";
     [SerializeField] private UpgradePanel m_UpgradePanel;
     [SerializeField] private CountdownTimer m_Timer;
     [SerializeField] private FadePanel m_FadePanel;
 
+    public static LoadSceneManager Instance { get; private set; }
+
+    private bool m_IsLoading;
+
+    public bool IsLoading => m_IsLoading;
+
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        Instance = this;
     }
 
     private void Start()
     {
         if (RuntimeData.Instance != null)
             RuntimeData.Instance.SyncFromUpgradeData();
-
-        if (!SceneManager.GetSceneByName(m_GameSceneName).isLoaded)
-        {
-            SceneManager.LoadScene(m_GameSceneName, LoadSceneMode.Additive);
-            m_FadePanel?.FadeIn();
-        }
     }
+
+    private void OnDestroy()
+    {
+        if (Instance == this) Instance = null;
+    }
+
+    // ── Delayed boss kill reload ─────────────────────────────────────
+
+    public void DelayedReload()
+    {
+        StartCoroutine(DelayedReloadRoutine());
+    }
+
+    private IEnumerator DelayedReloadRoutine()
+    {
+        yield return new WaitForSeconds(0.02f);
+        if (GameManager.BossAlreadyDead) yield break;
+        ReloadGameScene();
+    }
+
+    // ── Public reload ────────────────────────────────────────────────
 
     public void ReloadGameScene()
     {
-        if (m_Timer != null)
-            m_Timer.ResetTimer();
+        if (m_IsLoading) return;
 
+        if (m_Timer != null) m_Timer.ResetTimer();
         GameManager.IsGameOver = false;
         GameManager.HasStarted  = false;
+        GameManager.BossAlreadyDead = false;
+        if (m_UpgradePanel != null) m_UpgradePanel.ClosePanel();
 
-        if (m_UpgradePanel != null)
-            m_UpgradePanel.ClosePanel();
-
-        if (RuntimeData.Instance != null)
-            RuntimeData.Instance.SyncFromUpgradeData();
+        if (RuntimeData.Instance != null) RuntimeData.Instance.SyncFromUpgradeData();
 
         if (m_FadePanel != null)
         {
-            m_FadePanel.FadeOut().OnComplete(() =>
-            {
-                SceneManager.LoadScene(m_GameSceneName);
-                m_FadePanel.FadeIn();
-            });
+            m_IsLoading = true;
+            m_FadePanel.FadeOut().OnComplete(() => ExecuteReload());
         }
         else
         {
-            SceneManager.LoadScene(m_GameSceneName);
+            ExecuteReload();
         }
+    }
+
+    private void ExecuteReload()
+    {
+        Scene previousActive = SceneManager.GetActiveScene();
+
+        var loadHandle = Addressables.LoadSceneAsync(m_GameSceneKey, LoadSceneMode.Additive);
+        loadHandle.Completed += handle =>
+        {
+            if (handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
+            {
+                SceneManager.SetActiveScene(handle.Result.Scene);
+
+                var unloadOp = SceneManager.UnloadSceneAsync(previousActive);
+                if (unloadOp != null)
+                    unloadOp.completed += _ => OnReloadComplete();
+                else
+                    OnReloadComplete();
+            }
+            else
+            {
+                m_IsLoading = false;
+                Debug.LogError($"[LoadSceneManager] Failed to load: {m_GameSceneKey}");
+            }
+        };
+    }
+
+    private void EnsureEventSystem()
+    {
+        if (UnityEngine.EventSystems.EventSystem.current == null)
+        {
+            var go = new GameObject("EventSystem");
+            go.AddComponent<UnityEngine.EventSystems.EventSystem>();
+            go.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
+        }
+    }
+
+    private void OnReloadComplete()
+    {
+        EnsureEventSystem();
+
+        if (m_FadePanel != null)
+            m_FadePanel.FadeIn().OnComplete(() => m_IsLoading = false);
+        else
+            m_IsLoading = false;
     }
 }

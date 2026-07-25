@@ -23,4 +23,5 @@ public class EnemyData : ScriptableObject
 
     [Header("Spawning")]
     public float spawnWeight = 10f;
+    public bool isBoss;
 }

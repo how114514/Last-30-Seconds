@@ -25,6 +25,8 @@ public class EnemyStats : MonoBehaviour, IDamageable
     private SpriteRenderer m_SpriteRenderer;
     private Coroutine m_FlashRoutine;
 
+    public bool IsBoss { get; private set; }
+
     public int MaxHealth => m_MaxHealth;
     public int CurrentHealth => m_CurrentHealth;
     public bool IsDead => m_CurrentHealth <= 0;
@@ -53,10 +55,16 @@ public class EnemyStats : MonoBehaviour, IDamageable
         if (movement != null) movement.SetMoveSpeed(data.moveSpeed);
 
         var dealer = GetComponent<DamageDealer>();
-        if (dealer != null) dealer.SetDamage(data.damage);
+        if (dealer != null)
+        {
+            dealer.SetDamage(data.damage);
+            dealer.isBossAttack = data.isBoss;
+        }
 
         var sr = GetComponent<SpriteRenderer>();
         if (sr != null) sr.sprite = data.sprite;
+
+        IsBoss = data.isBoss;
     }
 
     /// <summary>
@@ -80,12 +88,22 @@ public class EnemyStats : MonoBehaviour, IDamageable
 
     private void Die()
     {
+        // Disable collider immediately to prevent same-frame double-hit race
+        var col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        // Fallback in case Start() hasn't run yet
+        if (m_PlayerScore == null && Player.Instance != null)
+            m_PlayerScore = Player.Instance.GetComponent<PlayerScore>();
+
+        // Add score BEFORE BossDefeated so the upgrade panel reads it
         if (m_PlayerScore != null)
             m_PlayerScore.AddScore(m_ScoreReward);
 
-        // Disable collider + movement so the corpse stays briefly for the sound
-        var col = GetComponent<Collider2D>();
-        if (col != null) col.enabled = false;
+        if (IsBoss)
+            GameManager.BossDefeated();
+
+        // Corpse: disable movement
         var move = GetComponent<EnemyMovement>();
         if (move != null) move.enabled = false;
 

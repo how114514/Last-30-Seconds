@@ -1,13 +1,6 @@
 using UnityEngine;
 
 /// <summary>
-/// Put on the root GameObject of the Persistent scene.
-/// Everything under it survives scene loads.
+/// Marker for Persistent scene root. Scene stays loaded via Addressables.
 /// </summary>
-public class PersistentRoot : MonoBehaviour
-{
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-}
+public class PersistentRoot : MonoBehaviour { }

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: UpgradeData
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   attackDamage:
-    dimensionName: Attack Damage
-    description: 1
+    dimensionName: Attack Power
+    description: Increase the damage dealt by each attack.
     type: 1
-    currentLevel: 4
+    currentLevel: 0
     stages:
     - floatValue: 1
       intValue: 1
@@ -29,44 +29,194 @@ MonoBehaviour:
     - floatValue: 3
       intValue: 3
       boolValue: 0
-      price: 5
+      price: 7
     - floatValue: 4
       intValue: 4
       boolValue: 0
-      price: 5
+      price: 10
     - floatValue: 5
       intValue: 5
       boolValue: 0
-      price: 5
+      price: 14
+    - floatValue: 5
+      intValue: 7
+      boolValue: 0
+      price: 19
+    - floatValue: 5
+      intValue: 8
+      boolValue: 0
+      price: 26
+    - floatValue: 5
+      intValue: 11
+      boolValue: 0
+      price: 36
+    - floatValue: 5
+      intValue: 13
+      boolValue: 0
+      price: 50
+    - floatValue: 5
+      intValue: 17
+      boolValue: 0
+      price: 70
+    - floatValue: 5
+      intValue: 20
+      boolValue: 0
+      price: 97
+    - floatValue: 5
+      intValue: 26
+      boolValue: 0
+      price: 135
+    - floatValue: 5
+      intValue: 32
+      boolValue: 0
+      price: 188
+    - floatValue: 5
+      intValue: 40
+      boolValue: 0
+      price: 262
+    - floatValue: 5
+      intValue: 49
+      boolValue: 0
+      price: 365
+    - floatValue: 5
+      intValue: 61
+      boolValue: 0
+      price: 509
+    - floatValue: 5
+      intValue: 74
+      boolValue: 0
+      price: 710
+    - floatValue: 5
+      intValue: 92
+      boolValue: 0
+      price: 990
+    - floatValue: 5
+      intValue: 112
+      boolValue: 0
+      price: 1380
+    - floatValue: 5
+      intValue: 139
+      boolValue: 0
+      price: 1925
+    - floatValue: 5
+      intValue: 169
+      boolValue: 0
+      price: 2683
+    - floatValue: 5
+      intValue: 209
+      boolValue: 0
+      price: 3742
+    - floatValue: 5
+      intValue: 254
+      boolValue: 0
+      price: 5218
+    - floatValue: 5
+      intValue: 314
+      boolValue: 0
+      price: 7500
+    - floatValue: 5
+      intValue: 382
+      boolValue: 0
+      price: 10000
+    - floatValue: 5
+      intValue: 472
+      boolValue: 0
+      price: 15000
   attackSpeed:
     dimensionName: Attack Speed
-    description: 2
+    description: Increase the speed of your attacks, allowing you to strike more
+      frequently.
     type: 0
-    currentLevel: 1
+    currentLevel: 0
     stages:
     - floatValue: 1
       intValue: 0
       boolValue: 0
       price: 0
+    - floatValue: 1.1
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 1.2
+      intValue: 0
+      boolValue: 0
+      price: 7
+    - floatValue: 1.3
+      intValue: 0
+      boolValue: 0
+      price: 10
+    - floatValue: 1.4
+      intValue: 0
+      boolValue: 0
+      price: 14
     - floatValue: 1.5
       intValue: 0
       boolValue: 0
-      price: 5
+      price: 19
+    - floatValue: 1.6
+      intValue: 0
+      boolValue: 0
+      price: 26
+    - floatValue: 1.7
+      intValue: 0
+      boolValue: 0
+      price: 36
+    - floatValue: 1.8
+      intValue: 0
+      boolValue: 0
+      price: 50
+    - floatValue: 1.9
+      intValue: 0
+      boolValue: 0
+      price: 70
     - floatValue: 2
       intValue: 0
       boolValue: 0
-      price: 5
+      price: 97
+    - floatValue: 2.1
+      intValue: 0
+      boolValue: 0
+      price: 135
+    - floatValue: 2.2
+      intValue: 0
+      boolValue: 0
+      price: 188
+    - floatValue: 2.3
+      intValue: 0
+      boolValue: 0
+      price: 262
+    - floatValue: 2.4
+      intValue: 0
+      boolValue: 0
+      price: 365
     - floatValue: 2.5
       intValue: 0
       boolValue: 0
-      price: 5
+      price: 509
+    - floatValue: 2.6
+      intValue: 0
+      boolValue: 0
+      price: 710
+    - floatValue: 2.7
+      intValue: 0
+      boolValue: 0
+      price: 990
+    - floatValue: 2.8
+      intValue: 0
+      boolValue: 0
+      price: 1380
+    - floatValue: 2.9
+      intValue: 0
+      boolValue: 0
+      price: 1925
     - floatValue: 3
       intValue: 0
       boolValue: 0
-      price: 5
+      price: 2683
   spawnSlashWave:
-    dimensionName: Spawn SlashWave
-    description: 3
+    dimensionName: Unlock Slash Wave
+    description: Unlock and enhance the slash wave ability, extending your attack
+      range.
     type: 2
     currentLevel: 0
     stages:
@@ -77,216 +227,581 @@ MonoBehaviour:
     - floatValue: 0
       intValue: 0
       boolValue: 1
-      price: 5
+      price: 19
   slashWaveDamage:
-    dimensionName: SlashWaveDamage
-    description: 4
+    dimensionName: Slash Wave Power
+    description: Increase the damage dealt by the slash wave.
     type: 1
     currentLevel: 0
     stages:
     - floatValue: 0
-      intValue: 10
-      boolValue: 0
-      price: 10
-    - floatValue: 0
-      intValue: 20
-      boolValue: 0
-      price: 10
-    - floatValue: 0
-      intValue: 30
-      boolValue: 0
-      price: 10
-    - floatValue: 0
-      intValue: 40
-      boolValue: 0
-      price: 10
-  slashWaveSize:
-    dimensionName: SlashWave Size
-    description: 5
-    type: 0
-    currentLevel: 1
-    stages:
-    - floatValue: 2
-      intValue: 0
-      boolValue: 0
-      price: 0
-    - floatValue: 3
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 4
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 5
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 6
-      intValue: 0
-      boolValue: 0
-      price: 5
-  movementSpeed:
-    dimensionName: Movement Speed
-    description: 6
-    type: 0
-    currentLevel: 4
-    stages:
-    - floatValue: 5
-      intValue: 0
-      boolValue: 0
-      price: 0
-    - floatValue: 6
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 7
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 8
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 9
-      intValue: 0
-      boolValue: 0
-      price: 5
-  dodgeChance:
-    dimensionName: Dodge Chance
-    description: 7
-    type: 0
-    currentLevel: 0
-    stages:
-    - floatValue: 0
-      intValue: 0
-      boolValue: 0
-      price: 0
-    - floatValue: 0.2
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 0.4
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 0.6
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 0.8
-      intValue: 0
-      boolValue: 0
-      price: 5
-  resourceMultiplier:
-    dimensionName: Resource Multiplier
-    description: 8
-    type: 0
-    currentLevel: 1
-    stages:
-    - floatValue: 1
-      intValue: 0
-      boolValue: 0
-      price: 0
-    - floatValue: 2
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 3
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 4
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 5
-      intValue: 0
-      boolValue: 0
-      price: 5
-  passiveIncome:
-    dimensionName: Passive Income
-    description: 9
-    type: 1
-    currentLevel: 1
-    stages:
-    - floatValue: 0
-      intValue: 0
-      boolValue: 0
-      price: 0
-    - floatValue: 0
-      intValue: 1
-      boolValue: 0
-      price: 5
-    - floatValue: 0
-      intValue: 2
-      boolValue: 0
-      price: 5
-    - floatValue: 0
       intValue: 3
       boolValue: 0
-      price: 5
+      price: 0
     - floatValue: 0
       intValue: 4
       boolValue: 0
-      price: 5
-  enemySpawnInterval:
-    dimensionName: Enemy Spawn Interval
-    description: 10
-    type: 0
-    currentLevel: 2
-    stages:
-    - floatValue: 5
-      intValue: 0
-      boolValue: 0
-      price: 0
-    - floatValue: 4
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 3
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 2
-      intValue: 0
-      boolValue: 0
-      price: 5
-    - floatValue: 1
-      intValue: 0
-      boolValue: 0
-      price: 5
-  enemySpawnCount:
-    dimensionName: Enemy Spawn Count
-    description: 11
-    type: 1
-    currentLevel: 1
-    stages:
-    - floatValue: 0
-      intValue: 1
-      boolValue: 0
-      price: 0
-    - floatValue: 0
-      intValue: 2
-      boolValue: 0
-      price: 5
-    - floatValue: 0
-      intValue: 3
-      boolValue: 0
-      price: 5
-    - floatValue: 0
-      intValue: 4
-      boolValue: 0
-      price: 5
+      price: 26
     - floatValue: 0
       intValue: 5
       boolValue: 0
+      price: 36
+    - floatValue: 0
+      intValue: 6
+      boolValue: 0
+      price: 50
+    - floatValue: 0
+      intValue: 7
+      boolValue: 0
+      price: 70
+    - floatValue: 0
+      intValue: 10
+      boolValue: 0
+      price: 97
+    - floatValue: 0
+      intValue: 11
+      boolValue: 0
+      price: 135
+    - floatValue: 0
+      intValue: 14
+      boolValue: 0
+      price: 188
+    - floatValue: 0
+      intValue: 17
+      boolValue: 0
+      price: 262
+    - floatValue: 0
+      intValue: 21
+      boolValue: 0
+      price: 365
+    - floatValue: 0
+      intValue: 25
+      boolValue: 0
+      price: 509
+    - floatValue: 0
+      intValue: 31
+      boolValue: 0
+      price: 710
+    - floatValue: 0
+      intValue: 38
+      boolValue: 0
+      price: 990
+    - floatValue: 0
+      intValue: 47
+      boolValue: 0
+      price: 1380
+    - floatValue: 0
+      intValue: 57
+      boolValue: 0
+      price: 1925
+    - floatValue: 0
+      intValue: 70
+      boolValue: 0
+      price: 2683
+    - floatValue: 0
+      intValue: 85
+      boolValue: 0
+      price: 3742
+    - floatValue: 0
+      intValue: 105
+      boolValue: 0
+      price: 5218
+    - floatValue: 0
+      intValue: 128
+      boolValue: 0
+      price: 7500
+    - floatValue: 0
+      intValue: 158
+      boolValue: 0
+      price: 10000
+    - floatValue: 0
+      intValue: 192
+      boolValue: 0
+      price: 15000
+  slashWaveSize:
+    dimensionName: Slash Wave Range
+    description: Increase the size of the slash wave, allowing it to hit more enemies.
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 2
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 2.5
+      intValue: 0
+      boolValue: 0
+      price: 36
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 70
+    - floatValue: 3.5
+      intValue: 0
+      boolValue: 0
+      price: 135
+    - floatValue: 4
+      intValue: 0
+      boolValue: 0
+      price: 262
+    - floatValue: 4.5
+      intValue: 0
+      boolValue: 0
+      price: 509
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 990
+    - floatValue: 5.5
+      intValue: 0
+      boolValue: 0
+      price: 1925
+    - floatValue: 6
+      intValue: 0
+      boolValue: 0
+      price: 3742
+    - floatValue: 6.5
+      intValue: 0
+      boolValue: 0
+      price: 7500
+    - floatValue: 7
+      intValue: 0
+      boolValue: 0
+      price: 15000
+  movementSpeed:
+    dimensionName: Movement Speed
+    description: Increase your movement speed and improve your mobility in combat.
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 5.5
+      intValue: 0
+      boolValue: 0
+      price: 7
+    - floatValue: 6
+      intValue: 0
+      boolValue: 0
+      price: 14
+    - floatValue: 6.5
+      intValue: 0
+      boolValue: 0
+      price: 26
+    - floatValue: 7
+      intValue: 0
+      boolValue: 0
+      price: 50
+    - floatValue: 7.5
+      intValue: 0
+      boolValue: 0
+      price: 97
+    - floatValue: 8
+      intValue: 0
+      boolValue: 0
+      price: 188
+    - floatValue: 8.5
+      intValue: 0
+      boolValue: 0
+      price: 365
+    - floatValue: 9
+      intValue: 0
+      boolValue: 0
+      price: 710
+    - floatValue: 9.5
+      intValue: 0
+      boolValue: 0
+      price: 1380
+    - floatValue: 10
+      intValue: 0
+      boolValue: 0
+      price: 2683
+  dodgeChance:
+    dimensionName: Dodge Chance
+    description: Gain a chance to avoid damage from normal enemies. Boss attacks
+      cannot be dodged.
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 0.05
+      intValue: 0
+      boolValue: 0
       price: 5
-  enemySpawnPoints:
-    dimensionName: Enemy Spawn Points
-    description: 12
+    - floatValue: 0.1
+      intValue: 0
+      boolValue: 0
+      price: 7
+    - floatValue: 0.15
+      intValue: 0
+      boolValue: 0
+      price: 10
+    - floatValue: 0.2
+      intValue: 0
+      boolValue: 0
+      price: 14
+    - floatValue: 0.25
+      intValue: 0
+      boolValue: 0
+      price: 19
+    - floatValue: 0.3
+      intValue: 0
+      boolValue: 0
+      price: 26
+    - floatValue: 0.35
+      intValue: 0
+      boolValue: 0
+      price: 36
+    - floatValue: 0.4
+      intValue: 0
+      boolValue: 0
+      price: 50
+    - floatValue: 0.45
+      intValue: 0
+      boolValue: 0
+      price: 70
+    - floatValue: 0.5
+      intValue: 0
+      boolValue: 0
+      price: 97
+    - floatValue: 0.55
+      intValue: 0
+      boolValue: 0
+      price: 135
+    - floatValue: 0.6
+      intValue: 0
+      boolValue: 0
+      price: 188
+    - floatValue: 0.65
+      intValue: 0
+      boolValue: 0
+      price: 262
+    - floatValue: 0.7
+      intValue: 0
+      boolValue: 0
+      price: 365
+    - floatValue: 0.75
+      intValue: 0
+      boolValue: 0
+      price: 509
+    - floatValue: 0.8
+      intValue: 0
+      boolValue: 0
+      price: 710
+    - floatValue: 0.85
+      intValue: 0
+      boolValue: 0
+      price: 990
+    - floatValue: 0.9
+      intValue: 0
+      boolValue: 0
+      price: 1380
+    - floatValue: 0.95
+      intValue: 0
+      boolValue: 0
+      price: 1925
+    - floatValue: 1
+      intValue: 0
+      boolValue: 0
+      price: 2683
+  resourceMultiplier:
+    dimensionName: Resource Multiplier
+    description: Increase the resources gained from defeating enemies.
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 1
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 1.06
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 1.12
+      intValue: 0
+      boolValue: 0
+      price: 7
+    - floatValue: 1.18
+      intValue: 0
+      boolValue: 0
+      price: 10
+    - floatValue: 1.25
+      intValue: 0
+      boolValue: 0
+      price: 14
+    - floatValue: 1.31
+      intValue: 0
+      boolValue: 0
+      price: 19
+    - floatValue: 1.37
+      intValue: 0
+      boolValue: 0
+      price: 26
+    - floatValue: 1.43
+      intValue: 0
+      boolValue: 0
+      price: 36
+    - floatValue: 1.5
+      intValue: 0
+      boolValue: 0
+      price: 50
+    - floatValue: 1.6
+      intValue: 0
+      boolValue: 0
+      price: 70
+    - floatValue: 1.7
+      intValue: 0
+      boolValue: 0
+      price: 97
+    - floatValue: 1.8
+      intValue: 0
+      boolValue: 0
+      price: 135
+    - floatValue: 1.9
+      intValue: 0
+      boolValue: 0
+      price: 188
+    - floatValue: 2
+      intValue: 0
+      boolValue: 0
+      price: 262
+    - floatValue: 2.1
+      intValue: 0
+      boolValue: 0
+      price: 365
+    - floatValue: 2.2
+      intValue: 0
+      boolValue: 0
+      price: 509
+    - floatValue: 2.3
+      intValue: 0
+      boolValue: 0
+      price: 710
+    - floatValue: 2.4
+      intValue: 0
+      boolValue: 0
+      price: 990
+    - floatValue: 2.5
+      intValue: 0
+      boolValue: 0
+      price: 1380
+    - floatValue: 2.625
+      intValue: 0
+      boolValue: 0
+      price: 1925
+    - floatValue: 2.75
+      intValue: 0
+      boolValue: 0
+      price: 2683
+    - floatValue: 2.875
+      intValue: 0
+      boolValue: 0
+      price: 3742
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 5218
+  passiveIncome:
+    dimensionName: Passive Income
+    description: Gain additional resources over time without defeating enemies.
     type: 1
-    currentLevel: 1
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 14
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 19
+    - floatValue: 0
+      intValue: 8
+      boolValue: 0
+      price: 26
+    - floatValue: 0
+      intValue: 9
+      boolValue: 0
+      price: 36
+    - floatValue: 0
+      intValue: 10
+      boolValue: 0
+      price: 50
+    - floatValue: 0
+      intValue: 11
+      boolValue: 0
+      price: 70
+    - floatValue: 0
+      intValue: 19
+      boolValue: 0
+      price: 97
+    - floatValue: 0
+      intValue: 21
+      boolValue: 0
+      price: 135
+    - floatValue: 0
+      intValue: 35
+      boolValue: 0
+      price: 188
+    - floatValue: 0
+      intValue: 38
+      boolValue: 0
+      price: 262
+    - floatValue: 0
+      intValue: 42
+      boolValue: 0
+      price: 365
+    - floatValue: 0
+      intValue: 67
+      boolValue: 0
+      price: 509
+    - floatValue: 0
+      intValue: 69
+      boolValue: 0
+      price: 710
+    - floatValue: 0
+      intValue: 72
+      boolValue: 0
+      price: 910
+    - floatValue: 0
+      intValue: 105
+      boolValue: 0
+      price: 1380
+    - floatValue: 0
+      intValue: 139
+      boolValue: 0
+      price: 1925
+    - floatValue: 0
+      intValue: 148
+      boolValue: 0
+      price: 2683
+    - floatValue: 0
+      intValue: 157
+      boolValue: 0
+      price: 3742
+    - floatValue: 0
+      intValue: 166
+      boolValue: 0
+      price: 5218
+  enemySpawnInterval:
+    dimensionName: Enemy Rush
+    description: Increase enemy spawn frequency. More enemies create more pressure,
+      but provide more opportunities to gain resources. This upgrade can be reverted.
+    type: 0
+    currentLevel: 0
+    stages:
+    - floatValue: 5
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 4.9
+      intValue: 0
+      boolValue: 0
+      price: 5
+    - floatValue: 4.8
+      intValue: 0
+      boolValue: 0
+      price: 7
+    - floatValue: 4.7
+      intValue: 0
+      boolValue: 0
+      price: 10
+    - floatValue: 4.6
+      intValue: 0
+      boolValue: 0
+      price: 14
+    - floatValue: 4.5
+      intValue: 0
+      boolValue: 0
+      price: 19
+    - floatValue: 4.4
+      intValue: 0
+      boolValue: 0
+      price: 26
+    - floatValue: 4.3
+      intValue: 0
+      boolValue: 0
+      price: 36
+    - floatValue: 4.2
+      intValue: 0
+      boolValue: 0
+      price: 50
+    - floatValue: 4.1
+      intValue: 0
+      boolValue: 0
+      price: 70
+    - floatValue: 4
+      intValue: 0
+      boolValue: 0
+      price: 97
+    - floatValue: 3.9
+      intValue: 0
+      boolValue: 0
+      price: 135
+    - floatValue: 3.8
+      intValue: 0
+      boolValue: 0
+      price: 188
+    - floatValue: 3.7
+      intValue: 0
+      boolValue: 0
+      price: 262
+    - floatValue: 3.6
+      intValue: 0
+      boolValue: 0
+      price: 365
+    - floatValue: 3.5
+      intValue: 0
+      boolValue: 0
+      price: 509
+    - floatValue: 3.4
+      intValue: 0
+      boolValue: 0
+      price: 710
+    - floatValue: 3.3
+      intValue: 0
+      boolValue: 0
+      price: 990
+    - floatValue: 3.2
+      intValue: 0
+      boolValue: 0
+      price: 1380
+    - floatValue: 3.15
+      intValue: 0
+      boolValue: 0
+      price: 1925
+    - floatValue: 3.1
+      intValue: 0
+      boolValue: 0
+      price: 2683
+    - floatValue: 3.05
+      intValue: 0
+      boolValue: 0
+      price: 3742
+    - floatValue: 3
+      intValue: 0
+      boolValue: 0
+      price: 5218
+  enemySpawnCount:
+    dimensionName: Enemy Horde
+    description: Increase the number of enemies spawned each time. More enemies mean
+      higher risk and greater rewards. This upgrade can be reverted.
+    type: 1
+    currentLevel: 0
     stages:
     - floatValue: 0
       intValue: 1
@@ -295,7 +810,61 @@ MonoBehaviour:
     - floatValue: 0
       intValue: 2
       boolValue: 0
-      price: 10
+      price: 19
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 97
+    - floatValue: 0
+      intValue: 4
+      boolValue: 0
+      price: 509
+    - floatValue: 0
+      intValue: 5
+      boolValue: 0
+      price: 1925
+  enemySpawnPoints:
+    dimensionName: Enemy Portals
+    description: Unlock additional enemy spawn locations. More spawn points increase
+      enemy pressure and resource gain. This upgrade can be reverted.
+    type: 1
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 26
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 188
+    - floatValue: 0
+      intValue: 4
+      boolValue: 0
+      price: 1380
+  enemyVariety:
+    dimensionName: Enemy Evolution
+    description: Introduce new enemy types with unique abilities. Stronger enemies
+      provide greater rewards. This upgrade can be reverted.
+    type: 1
+    currentLevel: 0
+    stages:
+    - floatValue: 0
+      intValue: 0
+      boolValue: 0
+      price: 0
+    - floatValue: 0
+      intValue: 1
+      boolValue: 0
+      price: 5
+    - floatValue: 0
+      intValue: 2
+      boolValue: 0
+      price: 7
     - floatValue: 0
       intValue: 3
       boolValue: 0
@@ -303,22 +872,98 @@ MonoBehaviour:
     - floatValue: 0
       intValue: 4
       boolValue: 0
-      price: 10
-  enemyVariety:
-    dimensionName: Enemy Variety
-    description: 13
+      price: 14
+    - floatValue: 0
+      intValue: 5
+      boolValue: 0
+      price: 19
+    - floatValue: 0
+      intValue: 6
+      boolValue: 0
+      price: 26
+    - floatValue: 0
+      intValue: 7
+      boolValue: 0
+      price: 36
+    - floatValue: 0
+      intValue: 8
+      boolValue: 0
+      price: 50
+    - floatValue: 0
+      intValue: 9
+      boolValue: 0
+      price: 70
+    - floatValue: 0
+      intValue: 10
+      boolValue: 0
+      price: 97
+    - floatValue: 0
+      intValue: 11
+      boolValue: 0
+      price: 13
+    - floatValue: 0
+      intValue: 12
+      boolValue: 0
+      price: 188
+    - floatValue: 0
+      intValue: 13
+      boolValue: 0
+      price: 262
+    - floatValue: 0
+      intValue: 14
+      boolValue: 0
+      price: 365
+    - floatValue: 0
+      intValue: 15
+      boolValue: 0
+      price: 509
+    - floatValue: 0
+      intValue: 16
+      boolValue: 0
+      price: 710
+    - floatValue: 0
+      intValue: 17
+      boolValue: 0
+      price: 990
+    - floatValue: 0
+      intValue: 18
+      boolValue: 0
+      price: 1380
+    - floatValue: 0
+      intValue: 19
+      boolValue: 0
+      price: 1925
+    - floatValue: 0
+      intValue: 20
+      boolValue: 0
+      price: 2683
+    - floatValue: 0
+      intValue: 21
+      boolValue: 0
+      price: 3742
+    - floatValue: 0
+      intValue: 22
+      boolValue: 0
+      price: 5218
+  enemyBoss:
+    dimensionName: Boss Challenge
+    description: Unlock powerful bosses. Defeat 10 bosses to complete the game.
     type: 1
-    currentLevel: 2
+    currentLevel: 0
     stages:
     - floatValue: 0
       intValue: 0
       boolValue: 0
-      price: 10
+      price: 0
     - floatValue: 0
       intValue: 1
       boolValue: 0
-      price: 10
+      price: 7500
     - floatValue: 0
       intValue: 2
       boolValue: 0
-      price: 10
+      price: 15000
+    - floatValue: 0
+      intValue: 3
+      boolValue: 0
+      price: 30000

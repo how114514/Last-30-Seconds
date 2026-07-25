@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageDealer
   m_DamageSource: 2
+  isBossAttack: 0
   m_TargetLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -199,11 +200,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlashWave
   m_DamageAnimations:
-  - damageThreshold: 10
+  - damageThreshold: 3
     animationName: normalSlashWave
-  - damageThreshold: 20
+  - damageThreshold: 11
     animationName: iceSlashWave
-  - damageThreshold: 30
+  - damageThreshold: 31
     animationName: fireSlashWave
-  - damageThreshold: 40
+  - damageThreshold: 85
     animationName: darkSlashWave

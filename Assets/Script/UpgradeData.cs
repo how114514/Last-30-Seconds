@@ -11,7 +11,7 @@ public class UpgradeStage
     public float floatValue;
     public int   intValue;
     public bool  boolValue;
-    public int   price;
+    public int   price; 
 }
 
 /// <summary>
@@ -57,4 +57,5 @@ public class UpgradeData : ScriptableObject
     public UpgradeDimension enemySpawnCount;    // Int
     public UpgradeDimension enemySpawnPoints;   // Int
     public UpgradeDimension enemyVariety;       // Int
+    public UpgradeDimension enemyBoss;          // Int
 }

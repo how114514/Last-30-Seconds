@@ -37,6 +37,7 @@ public class UpgradePanel : MonoBehaviour
 
     // Combined button index (spawnSlashWave → slashWaveDamage)
     private const int COMBINED_INDEX = 2;
+    private const int ENEMY_COMBINED_INDEX = 11;
 
     private int m_SelectedIndex = -1;
     private UpgradeDimension m_SelectedDim;
@@ -123,6 +124,8 @@ public class UpgradePanel : MonoBehaviour
             return;
         }
 
+        bool isBoss = m_UpgradeData != null && m_SelectedDim == m_UpgradeData.enemyBoss;
+        bool bossLocked = isBoss && GameManager.BossesDefeated < m_SelectedDim.currentLevel;
         bool isMaxed = m_SelectedDim.currentLevel >= m_SelectedDim.stages.Length - 1;
         int maxLevel = Mathf.Max(0, m_SelectedDim.stages.Length - 1);
 
@@ -136,14 +139,22 @@ public class UpgradePanel : MonoBehaviour
             m_StageText.text = $"{m_SelectedDim.currentLevel}/{maxLevel}";
 
         if (m_PriceText != null)
-            m_PriceText.text = isMaxed ? "MAX" : $"${m_SelectedDim.stages[m_SelectedDim.currentLevel + 1].price}";
+        {
+            if (bossLocked)
+                m_PriceText.text = "Kill Boss";
+            else if (isMaxed)
+                m_PriceText.text = "MAX";
+            else
+                m_PriceText.text = $"${m_SelectedDim.stages[m_SelectedDim.currentLevel + 1].price}";
+        }
 
         if (m_UpgradeButton != null)
-            m_UpgradeButton.interactable = !isMaxed;
+            m_UpgradeButton.interactable = !isMaxed && !bossLocked;
 
         bool canWithdraw = m_SelectedIndex >= 8 && m_SelectedIndex <= 11;
+        bool canWithdrawThis = canWithdraw && m_SelectedDim != null && (m_SelectedDim.currentLevel > 0 || (isBoss && m_SelectedDim.currentLevel == 0));
         if (m_WithdrawButton != null)
-            m_WithdrawButton.interactable = canWithdraw && m_SelectedDim != null && m_SelectedDim.currentLevel > 0;
+            m_WithdrawButton.interactable = canWithdrawThis;
     }
 
     private void ClearDisplay()
@@ -160,6 +171,10 @@ public class UpgradePanel : MonoBehaviour
     {
         if (m_SelectedDim == null) return;
 
+        // Boss upgrade requires killing the previous boss
+        if (m_SelectedDim == m_UpgradeData.enemyBoss
+            && GameManager.BossesDefeated < m_SelectedDim.currentLevel) return;
+
         int nextLevel = m_SelectedDim.currentLevel + 1;
         if (nextLevel >= m_SelectedDim.stages.Length) return;
 
@@ -173,7 +188,7 @@ public class UpgradePanel : MonoBehaviour
             RuntimeData.Instance.SyncFromUpgradeData();
 
         // If combined button was at spawnSlashWave and we just unlocked it, re-resolve
-        if (m_SelectedIndex == COMBINED_INDEX)
+        if (m_SelectedIndex == COMBINED_INDEX || m_SelectedIndex == ENEMY_COMBINED_INDEX)
             m_SelectedDim = GetDimensionForIndex(m_SelectedIndex);
 
         RefreshDisplay();
@@ -183,6 +198,22 @@ public class UpgradePanel : MonoBehaviour
     {
         if (m_SelectedIndex < 8 || m_SelectedIndex > 11) return;
         if (m_SelectedDim == null) return;
+
+        // Boss at 0 → switch back to variety at max-1
+        if (m_SelectedDim == m_UpgradeData.enemyBoss && m_SelectedDim.currentLevel <= 0)
+        {
+            var variety = m_UpgradeData.enemyVariety;
+            if (variety != null && variety.stages.Length > 1)
+            {
+                variety.currentLevel = variety.stages.Length - 2; // second-to-last
+                if (RuntimeData.Instance != null) RuntimeData.Instance.SyncFromUpgradeData();
+                m_SelectedDim = GetDimensionForIndex(m_SelectedIndex);
+                PlayClick();
+            }
+            RefreshDisplay();
+            return;
+        }
+
         if (m_SelectedDim.currentLevel <= 0) return;
 
         PlayClick();
@@ -191,7 +222,7 @@ public class UpgradePanel : MonoBehaviour
         if (RuntimeData.Instance != null)
             RuntimeData.Instance.SyncFromUpgradeData();
 
-        if (m_SelectedIndex == COMBINED_INDEX)
+        if (m_SelectedIndex == COMBINED_INDEX || m_SelectedIndex == ENEMY_COMBINED_INDEX)
             m_SelectedDim = GetDimensionForIndex(m_SelectedIndex);
 
         RefreshDisplay();
@@ -229,7 +260,7 @@ public class UpgradePanel : MonoBehaviour
             8  => m_UpgradeData.enemySpawnInterval,
             9  => m_UpgradeData.enemySpawnCount,
             10 => m_UpgradeData.enemySpawnPoints,
-            11 => m_UpgradeData.enemyVariety,
+            11 => GetEnemyCombinedDimension(),
             _  => null
         };
     }
@@ -243,5 +274,15 @@ public class UpgradePanel : MonoBehaviour
                      && slash.stages[slash.currentLevel].boolValue;
 
         return unlocked ? m_UpgradeData.slashWaveDamage : slash;
+    }
+
+    /// <summary>enemyVariety before max, enemyBoss after.</summary>
+    private UpgradeDimension GetEnemyCombinedDimension()
+    {
+        var variety = m_UpgradeData.enemyVariety;
+        if (variety == null) return null;
+
+        bool maxed = variety.currentLevel >= variety.stages.Length - 1;
+        return maxed ? m_UpgradeData.enemyBoss : variety;
     }
 }

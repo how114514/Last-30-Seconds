@@ -34,14 +34,11 @@ public class RuntimeData : MonoBehaviour
     public int     enemySpawnCount    = 1;
     public int     enemySpawnPoints   = 3;
     public int     enemyVariety       = 1;
+    public int     enemyBoss          = 0;
 
     private void Awake()
     {
         Instance = this;
-    }
-
-    private void Start()
-    {
         SyncFromUpgradeData();
     }
 
@@ -63,6 +60,7 @@ public class RuntimeData : MonoBehaviour
         enemySpawnCount    = GetInt(m_UpgradeData.enemySpawnCount);
         enemySpawnPoints   = GetInt(m_UpgradeData.enemySpawnPoints);
         enemyVariety       = GetInt(m_UpgradeData.enemyVariety);
+        enemyBoss          = GetInt(m_UpgradeData.enemyBoss);
     }
 
     private int   GetInt(UpgradeDimension d)   => GetStage(d)?.intValue   ?? 0;
