@@ -177,8 +177,7 @@ MonoBehaviour:
   m_ScoreReward: 1
   m_FlashDuration: 0.1
   m_AudioSource: {fileID: 822972400931984512}
-  m_HurtSound: {fileID: 8300000, guid: 45b6a1d3a29392f43bfa563aa364c184, type: 3}
-  m_DeathSound: {fileID: 8300000, guid: eb116f0e1dd6d0e4c97250a1c545f103, type: 3}
+  m_HurtSound: {fileID: 8300000, guid: 8d9aeef3f9bb1cb4cb1c7b6f6ca62631, type: 3}
 --- !u!114 &6589510016084197210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,10 +204,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageDealer
   m_DamageSource: 0
+  isBossAttack: 0
   m_TargetLayer:
     serializedVersion: 2
     m_Bits: 8
   m_UseTrigger: 0
+  m_DamagePopupPrefab: {fileID: 0}
   m_KnockbackForce: 20
 --- !u!82 &822972400931984512
 AudioSource:

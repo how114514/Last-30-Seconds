@@ -19,7 +19,6 @@ public class EnemyStats : MonoBehaviour, IDamageable
     [Header("Audio")]
     [SerializeField] private AudioSource m_AudioSource;
     [SerializeField] private AudioClip m_HurtSound;
-    [SerializeField] private AudioClip m_DeathSound;
 
     private PlayerScore m_PlayerScore;
     private SpriteRenderer m_SpriteRenderer;
@@ -30,6 +29,7 @@ public class EnemyStats : MonoBehaviour, IDamageable
     public int MaxHealth => m_MaxHealth;
     public int CurrentHealth => m_CurrentHealth;
     public bool IsDead => m_CurrentHealth <= 0;
+    public float HealthPercent => (float)m_CurrentHealth / m_MaxHealth;
 
     private void Awake()
     {
@@ -100,15 +100,14 @@ public class EnemyStats : MonoBehaviour, IDamageable
         if (m_PlayerScore != null)
             m_PlayerScore.AddScore(m_ScoreReward);
 
+        GameStats.OnEnemyKilled();
+
         if (IsBoss)
             GameManager.BossDefeated();
 
         // Corpse: disable movement
         var move = GetComponent<EnemyMovement>();
         if (move != null) move.enabled = false;
-
-        if (m_AudioSource != null && m_DeathSound != null)
-            m_AudioSource.PlayOneShot(m_DeathSound);
 
         Destroy(gameObject, 0.5f);
     }

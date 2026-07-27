@@ -63,6 +63,7 @@ public class CountdownTimer : MonoBehaviour
     /// <summary>Boss 3 killed — game victory.</summary>
     public void BossWin()
     {
+        GameStats.CaptureEndGame();
         m_Running = false;
         m_Text.color = k_NormalColor;
         m_Remaining = 0f;
@@ -89,7 +90,6 @@ public class CountdownTimer : MonoBehaviour
 
     private void Update()
     {
-        // Wait for any key press to start
         if (!m_Running)
         {
             if (!GameManager.IsGameOver
@@ -98,6 +98,7 @@ public class CountdownTimer : MonoBehaviour
             {
                 m_Running = true;
                 GameManager.HasStarted = true;
+                GameStats.OnRunStart();
             }
             return;
         }
@@ -141,6 +142,7 @@ public class CountdownTimer : MonoBehaviour
 
     private void EndGame()
     {
+        GameStats.CaptureEndGame();
         GameManager.IsGameOver = true;
 
         if (Player.Instance != null)

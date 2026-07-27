@@ -1,12 +1,16 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 /// <summary>
 /// Player score (health). Starts at 0, cannot drop below 0, never dies.
-/// Triggers Hurt state when taking damage.
+/// Triggers Hurt state and camera shake when taking damage.
 /// </summary>
 public class PlayerScore : MonoBehaviour, IDamageable
 {
     [SerializeField] private int m_CurrentScore;
+
+    [Header("Camera Shake")]
+    [SerializeField] private CinemachineImpulseSource m_ImpulseSource;
 
     private float m_ScoreTimer;
 
@@ -47,6 +51,10 @@ public class PlayerScore : MonoBehaviour, IDamageable
         if (amount <= 0) return;
 
         if (Random.value < DodgeRate) return;
+
+        // Shake camera after dodge check (always shakes on actual hit, even at score=0)
+        if (m_ImpulseSource != null)
+            m_ImpulseSource.GenerateImpulse();
 
         m_CurrentScore = Mathf.Max(0, m_CurrentScore - amount);
 

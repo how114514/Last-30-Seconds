@@ -12,8 +12,14 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D m_Rigidbody;
     private InputAction m_MoveAction;
     private bool m_Blocked;
+    private float m_SpeedOverride = -1f;
 
-    private float MoveSpeed => RuntimeData.Instance != null ? RuntimeData.Instance.movementSpeed : 5f;
+    private float MoveSpeed => m_SpeedOverride >= 0f
+        ? m_SpeedOverride
+        : (RuntimeData.Instance != null ? RuntimeData.Instance.movementSpeed : 5f);
+
+    public void SetSpeedOverride(float speed) => m_SpeedOverride = speed;
+    public void ClearSpeedOverride() => m_SpeedOverride = -1f;
 
     /// <summary>Horizontal-only input (A/D keys).</summary>
     public Vector2 MoveInput
@@ -43,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (GameManager.IsGameOver || m_Blocked)
+        if (!GameManager.HasStarted || GameManager.IsGameOver || m_Blocked)
         {
             m_Rigidbody.linearVelocity = Vector2.zero;
             return;

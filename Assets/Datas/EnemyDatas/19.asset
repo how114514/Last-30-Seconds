@@ -16,7 +16,7 @@ MonoBehaviour:
   sprite: {fileID: 7093226309108023610, guid: 4ddd41d5f2f35bd41aa60d6e7843f272, type: 3}
   hp: 184
   damage: 208
-  moveSpeed: 3
+  moveSpeed: 5.4
   scoreReward: 19
   spawnWeight: 2217
   isBoss: 0

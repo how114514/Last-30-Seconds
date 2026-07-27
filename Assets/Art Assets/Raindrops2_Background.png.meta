@@ -1,0 +1,4290 @@
+fileFormatVersion: 2
+guid: 87d7a3b797e6d9f419879761884f660c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3035054077307895075
+    second: Raindrops2_Background_0
+  - first:
+      213: 2124205987341261225
+    second: Raindrops2_Background_1
+  - first:
+      213: -1401305504783650728
+    second: Raindrops2_Background_2
+  - first:
+      213: -6782939683835873141
+    second: Raindrops2_Background_3
+  - first:
+      213: -4444253813353298134
+    second: Raindrops2_Background_4
+  - first:
+      213: 7943716982741203643
+    second: Raindrops2_Background_5
+  - first:
+      213: 7795749958366269363
+    second: Raindrops2_Background_6
+  - first:
+      213: 5125121427415851311
+    second: Raindrops2_Background_7
+  - first:
+      213: -6743011981103353144
+    second: Raindrops2_Background_8
+  - first:
+      213: -439597305754850127
+    second: Raindrops2_Background_9
+  - first:
+      213: -3854191873915127071
+    second: Raindrops2_Background_10
+  - first:
+      213: 1177402809332385163
+    second: Raindrops2_Background_11
+  - first:
+      213: -1707303903939534091
+    second: Raindrops2_Background_12
+  - first:
+      213: 3196405072308515664
+    second: Raindrops2_Background_13
+  - first:
+      213: 7356178743392452566
+    second: Raindrops2_Background_14
+  - first:
+      213: -4778487178776739287
+    second: Raindrops2_Background_15
+  - first:
+      213: -7110031023777079653
+    second: Raindrops2_Background_16
+  - first:
+      213: 2000225873400145791
+    second: Raindrops2_Background_17
+  - first:
+      213: 4395675752081543767
+    second: Raindrops2_Background_18
+  - first:
+      213: -7085405962537813677
+    second: Raindrops2_Background_19
+  - first:
+      213: -8579725698776232595
+    second: Raindrops2_Background_20
+  - first:
+      213: 4715986638791594882
+    second: Raindrops2_Background_21
+  - first:
+      213: -5820182575042130931
+    second: Raindrops2_Background_22
+  - first:
+      213: 8635220682858442678
+    second: Raindrops2_Background_23
+  - first:
+      213: 9075805641186347902
+    second: Raindrops2_Background_24
+  - first:
+      213: 1728260881974090182
+    second: Raindrops2_Background_25
+  - first:
+      213: 8523315469648676412
+    second: Raindrops2_Background_26
+  - first:
+      213: -1408789779683546318
+    second: Raindrops2_Background_27
+  - first:
+      213: -1337441701934132123
+    second: Raindrops2_Background_28
+  - first:
+      213: 616392761642797256
+    second: Raindrops2_Background_29
+  - first:
+      213: -3098183563847555737
+    second: Raindrops2_Background_30
+  - first:
+      213: -3813819600632197097
+    second: Raindrops2_Background_31
+  - first:
+      213: -4756691642229136494
+    second: Raindrops2_Background_32
+  - first:
+      213: 7316662738672754154
+    second: Raindrops2_Background_33
+  - first:
+      213: -3624323433697119604
+    second: Raindrops2_Background_34
+  - first:
+      213: 7149852218204404265
+    second: Raindrops2_Background_35
+  - first:
+      213: 7117332518874535647
+    second: Raindrops2_Background_36
+  - first:
+      213: -5782081551858964202
+    second: Raindrops2_Background_37
+  - first:
+      213: -6364439648789767116
+    second: Raindrops2_Background_38
+  - first:
+      213: -4341645047979466232
+    second: Raindrops2_Background_39
+  - first:
+      213: -1524875690085555393
+    second: Raindrops2_Background_40
+  - first:
+      213: 158441836009260306
+    second: Raindrops2_Background_41
+  - first:
+      213: 7012673834486296037
+    second: Raindrops2_Background_42
+  - first:
+      213: 8146069525847063858
+    second: Raindrops2_Background_43
+  - first:
+      213: -5606595273181116486
+    second: Raindrops2_Background_44
+  - first:
+      213: 2591474939568671944
+    second: Raindrops2_Background_45
+  - first:
+      213: -3552054900151138340
+    second: Raindrops2_Background_46
+  - first:
+      213: -4438503623710012564
+    second: Raindrops2_Background_47
+  - first:
+      213: 1121462868146926463
+    second: Raindrops2_Background_48
+  - first:
+      213: -8576277510474940255
+    second: Raindrops2_Background_49
+  - first:
+      213: -1572015557802448111
+    second: Raindrops2_Background_50
+  - first:
+      213: 1030929153360923783
+    second: Raindrops2_Background_51
+  - first:
+      213: 3820838438894021871
+    second: Raindrops2_Background_52
+  - first:
+      213: -4464904607542614464
+    second: Raindrops2_Background_53
+  - first:
+      213: 2870731071188455101
+    second: Raindrops2_Background_54
+  - first:
+      213: -2338826539096316936
+    second: Raindrops2_Background_55
+  - first:
+      213: -3231601085805254826
+    second: Raindrops2_Background_56
+  - first:
+      213: -7657317764647751048
+    second: Raindrops2_Background_57
+  - first:
+      213: -7903882270697920468
+    second: Raindrops2_Background_58
+  - first:
+      213: 6882465908136257295
+    second: Raindrops2_Background_59
+  - first:
+      213: 1663890297784053724
+    second: Raindrops2_Background_60
+  - first:
+      213: 1639943937731305844
+    second: Raindrops2_Background_61
+  - first:
+      213: 6764545849341761583
+    second: Raindrops2_Background_62
+  - first:
+      213: 7782577865923587182
+    second: Raindrops2_Background_63
+  - first:
+      213: 2231194017965269705
+    second: Raindrops2_Background_64
+  - first:
+      213: 6432558819594624588
+    second: Raindrops2_Background_65
+  - first:
+      213: -7044203057498010081
+    second: Raindrops2_Background_66
+  - first:
+      213: -141075921717800799
+    second: Raindrops2_Background_67
+  - first:
+      213: -8251307606241671041
+    second: Raindrops2_Background_68
+  - first:
+      213: -7216733516557513602
+    second: Raindrops2_Background_69
+  - first:
+      213: -4335935271243345395
+    second: Raindrops2_Background_70
+  - first:
+      213: -5141200470294419039
+    second: Raindrops2_Background_71
+  - first:
+      213: 3121091528639197315
+    second: Raindrops2_Background_72
+  - first:
+      213: 4024055324303221404
+    second: Raindrops2_Background_73
+  - first:
+      213: 870567674599447173
+    second: Raindrops2_Background_74
+  - first:
+      213: -1701463579089979262
+    second: Raindrops2_Background_75
+  - first:
+      213: -3258701332018877259
+    second: Raindrops2_Background_76
+  - first:
+      213: -3116194137336317057
+    second: Raindrops2_Background_77
+  - first:
+      213: -4324781236019390631
+    second: Raindrops2_Background_78
+  - first:
+      213: 5809279592105104514
+    second: Raindrops2_Background_79
+  - first:
+      213: 6897923834408629558
+    second: Raindrops2_Background_80
+  - first:
+      213: 2743109352563833939
+    second: Raindrops2_Background_81
+  - first:
+      213: -4802774062065722131
+    second: Raindrops2_Background_82
+  - first:
+      213: -61788878988648894
+    second: Raindrops2_Background_83
+  - first:
+      213: -3539920882046426073
+    second: Raindrops2_Background_84
+  - first:
+      213: -8350761974237775637
+    second: Raindrops2_Background_85
+  - first:
+      213: -4588683704222414989
+    second: Raindrops2_Background_86
+  - first:
+      213: -910997815326658559
+    second: Raindrops2_Background_87
+  - first:
+      213: 6605060597525017871
+    second: Raindrops2_Background_88
+  - first:
+      213: 5267346187211294004
+    second: Raindrops2_Background_89
+  - first:
+      213: -8273102605583239084
+    second: Raindrops2_Background_90
+  - first:
+      213: -6662391796598180310
+    second: Raindrops2_Background_91
+  - first:
+      213: 4462337899739092898
+    second: Raindrops2_Background_92
+  - first:
+      213: 6116567758501530415
+    second: Raindrops2_Background_93
+  - first:
+      213: 3624491347649085234
+    second: Raindrops2_Background_94
+  - first:
+      213: -7615336016980659957
+    second: Raindrops2_Background_95
+  - first:
+      213: -7418634420183078258
+    second: Raindrops2_Background_96
+  - first:
+      213: 5236590445616396430
+    second: Raindrops2_Background_97
+  - first:
+      213: -7016609220878914814
+    second: Raindrops2_Background_98
+  - first:
+      213: 2528453761866872636
+    second: Raindrops2_Background_99
+  - first:
+      213: 6176902566668808816
+    second: Raindrops2_Background_100
+  - first:
+      213: -4314131415609127453
+    second: Raindrops2_Background_101
+  - first:
+      213: -3581482462721757934
+    second: Raindrops2_Background_102
+  - first:
+      213: 923709394202452865
+    second: Raindrops2_Background_103
+  - first:
+      213: 4092287882515159639
+    second: Raindrops2_Background_104
+  - first:
+      213: 212897432954970188
+    second: Raindrops2_Background_105
+  - first:
+      213: -3363319389065604083
+    second: Raindrops2_Background_106
+  - first:
+      213: 6929393066443595212
+    second: Raindrops2_Background_107
+  - first:
+      213: -3453372825450422756
+    second: Raindrops2_Background_108
+  - first:
+      213: -7871550734921992357
+    second: Raindrops2_Background_109
+  - first:
+      213: -1552276049257390674
+    second: Raindrops2_Background_110
+  - first:
+      213: 1340635336036598607
+    second: Raindrops2_Background_111
+  - first:
+      213: 4508936428017139264
+    second: Raindrops2_Background_112
+  - first:
+      213: -3979347013903740333
+    second: Raindrops2_Background_113
+  - first:
+      213: -3632176626010191727
+    second: Raindrops2_Background_114
+  - first:
+      213: -44858008814131948
+    second: Raindrops2_Background_115
+  - first:
+      213: -6662220137321621768
+    second: Raindrops2_Background_116
+  - first:
+      213: -1697356945886278453
+    second: Raindrops2_Background_117
+  - first:
+      213: -4839875427679327475
+    second: Raindrops2_Background_118
+  - first:
+      213: 8568112733952757878
+    second: Raindrops2_Background_119
+  - first:
+      213: 5385617797979440450
+    second: Raindrops2_Background_120
+  - first:
+      213: -6881347911195651268
+    second: Raindrops2_Background_121
+  - first:
+      213: 7532868641584852002
+    second: Raindrops2_Background_122
+  - first:
+      213: 1541710614138680782
+    second: Raindrops2_Background_123
+  - first:
+      213: 148342861578764606
+    second: Raindrops2_Background_124
+  - first:
+      213: -6878185071264419536
+    second: Raindrops2_Background_125
+  - first:
+      213: 4211686755539380065
+    second: Raindrops2_Background_126
+  - first:
+      213: 340556794962701686
+    second: Raindrops2_Background_127
+  - first:
+      213: -2477174414362579745
+    second: Raindrops2_Background_128
+  - first:
+      213: 5547283795941352460
+    second: Raindrops2_Background_129
+  - first:
+      213: 4837229285661985419
+    second: Raindrops2_Background_130
+  - first:
+      213: -4355274361761786113
+    second: Raindrops2_Background_131
+  - first:
+      213: -3372088838837485669
+    second: Raindrops2_Background_132
+  - first:
+      213: -6843973479502128057
+    second: Raindrops2_Background_133
+  - first:
+      213: -6718213851026836213
+    second: Raindrops2_Background_134
+  - first:
+      213: 2301297187829250942
+    second: Raindrops2_Background_135
+  - first:
+      213: 771854743764624235
+    second: Raindrops2_Background_136
+  - first:
+      213: 3792458834426983606
+    second: Raindrops2_Background_137
+  - first:
+      213: -1028740084656126729
+    second: Raindrops2_Background_138
+  - first:
+      213: 1561507751361009640
+    second: Raindrops2_Background_139
+  - first:
+      213: 5150942869212994846
+    second: Raindrops2_Background_140
+  - first:
+      213: -3987498061084859087
+    second: Raindrops2_Background_141
+  - first:
+      213: -2536445000346406058
+    second: Raindrops2_Background_142
+  - first:
+      213: -3930500303493274606
+    second: Raindrops2_Background_143
+  - first:
+      213: -1026507709422981266
+    second: Raindrops2_Background_144
+  - first:
+      213: 8897725682733263439
+    second: Raindrops2_Background_145
+  - first:
+      213: 4308718377792867170
+    second: Raindrops2_Background_146
+  - first:
+      213: 1862463721782011865
+    second: Raindrops2_Background_147
+  - first:
+      213: 1785631220994536156
+    second: Raindrops2_Background_148
+  - first:
+      213: -7014643096317116103
+    second: Raindrops2_Background_149
+  - first:
+      213: -6376757703193111697
+    second: Raindrops2_Background_150
+  - first:
+      213: -303221959204039107
+    second: Raindrops2_Background_151
+  - first:
+      213: -3711022789170085543
+    second: Raindrops2_Background_152
+  - first:
+      213: -1506137740859650121
+    second: Raindrops2_Background_153
+  - first:
+      213: -474619724672414961
+    second: Raindrops2_Background_154
+  - first:
+      213: -2980843910548299078
+    second: Raindrops2_Background_155
+  - first:
+      213: -5199130907176013139
+    second: Raindrops2_Background_156
+  - first:
+      213: -4876483079607069877
+    second: Raindrops2_Background_157
+  - first:
+      213: -8166196023118959727
+    second: Raindrops2_Background_158
+  - first:
+      213: -268956441548679489
+    second: Raindrops2_Background_159
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raindrops2_Background_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1032
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd246f7a56251e5d0800000000000000
+      internalID: -3035054077307895075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1032
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9db394712ba7d10800000000000000
+      internalID: 2124205987341261225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_2
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1030
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850329d51109d8ce0800000000000000
+      internalID: -1401305504783650728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_3
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1027
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88ff0c8b482ed1a0800000000000000
+      internalID: -6782939683835873141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_4
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1016
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27c66314b6d252c0800000000000000
+      internalID: -4444253813353298134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 941
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbaf6881280cd3e60800000000000000
+      internalID: 7943716982741203643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 927
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf00329841103c60800000000000000
+      internalID: 7795749958366269363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 957
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f216ddfb8c6102740800000000000000
+      internalID: 5125121427415851311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_8
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 924
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2b12644520c62a0800000000000000
+      internalID: -6743011981103353144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 941
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc634a549c36e9f0800000000000000
+      internalID: -439597305754850127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_10
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 927
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea771b39e8238ac0800000000000000
+      internalID: -3854191873915127071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_11
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 957
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85cdcfed99f65010800000000000000
+      internalID: 1177402809332385163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 924
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2eb0225207e48e0800000000000000
+      internalID: -1707303903939534091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_13
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 939
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053b43d5a79eb5c20800000000000000
+      internalID: 3196405072308515664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_14
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 925
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfbf28a795661660800000000000000
+      internalID: 7356178743392452566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_15
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 955
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92201497a376fadb0800000000000000
+      internalID: -4778487178776739287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_16
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 922
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e92c55478145d90800000000000000
+      internalID: -7110031023777079653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_17
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 936
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77af8e85da32cb10800000000000000
+      internalID: 2000225873400145791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_18
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 922
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7525e96aec3900d30800000000000000
+      internalID: 4395675752081543767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_19
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 952
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359bf7131d49bad90800000000000000
+      internalID: -7085405962537813677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_20
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 925
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d072e2fe0bee880800000000000000
+      internalID: -8579725698776232595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_21
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 911
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28359a29cdc827140800000000000000
+      internalID: 4715986638791594882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_22
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 983
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c02bed8ce8a3fa0800000000000000
+      internalID: -5820182575042130931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_23
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 941
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf22eea57776d770800000000000000
+      internalID: 8635220682858442678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_24
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 908
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b066d152db3fd70800000000000000
+      internalID: 9075805641186347902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 866
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9d44d8d140cf710800000000000000
+      internalID: 1728260881974090182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_26
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 801
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36400dd246e84670800000000000000
+      internalID: 8523315469648676412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_27
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 866
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23be2c2d829f27ce0800000000000000
+      internalID: -1408789779683546318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_28
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 801
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5641c60bbd3707de0800000000000000
+      internalID: -1337441701934132123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_29
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 864
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c847df63fddd8800800000000000000
+      internalID: 616392761642797256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_30
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 799
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765a9eba67a0105d0800000000000000
+      internalID: -3098183563847555737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_31
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 861
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71055ea9747921bc0800000000000000
+      internalID: -3813819600632197097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_32
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 810
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293ecd64726dcfdb0800000000000000
+      internalID: -4756691642229136494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_33
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 850
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed1de7def10a8560800000000000000
+      internalID: 7316662738672754154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_34
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 826
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82fb5f1a01d3bdc0800000000000000
+      internalID: -3624323433697119604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_35
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 826
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92abc9ef5b0693360800000000000000
+      internalID: 7149852218204404265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_36
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 824
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd65ad77738d5c260800000000000000
+      internalID: 7117332518874535647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_37
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 821
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6196b1f967be1cfa0800000000000000
+      internalID: -5782081551858964202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_38
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 785
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c59731cd7fca7a0800000000000000
+      internalID: -6364439648789767116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_39
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 793
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802a956f4d06fb3c0800000000000000
+      internalID: -4341645047979466232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_40
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 793
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3362d593ad86dae0800000000000000
+      internalID: -1524875690085555393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_41
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 791
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21584e8a206e23200800000000000000
+      internalID: 158441836009260306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_42
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 788
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed6b3e92b5025160800000000000000
+      internalID: 7012673834486296037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_43
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 796
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23dbfb3f217ac0170800000000000000
+      internalID: 8146069525847063858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_44
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 777
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7c7a6dd4f5132b0800000000000000
+      internalID: -5606595273181116486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_45
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 637
+        width: 16
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc41513ab4c6f320800000000000000
+      internalID: 2591474939568671944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 710
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd74ecd43e094bec0800000000000000
+      internalID: -3552054900151138340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_47
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 696
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b0b7e68744762c0800000000000000
+      internalID: -4438503623710012564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_48
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 637
+        width: 16
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7330bc698c309f00800000000000000
+      internalID: 1121462868146926463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_49
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 710
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a048f41b01faf880800000000000000
+      internalID: -8576277510474940255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_50
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 696
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b2cc7dd241f2ae0800000000000000
+      internalID: -1572015557802448111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_51
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 635
+        width: 16
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c0ca65a989e4e00800000000000000
+      internalID: 1030929153360923783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_52
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 708
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fecaf660158560530800000000000000
+      internalID: 3820838438894021871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_53
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 694
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046ea6f5ae87902c0800000000000000
+      internalID: -4464904607542614464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_54
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 632
+        width: 16
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe4ddf03b2e6d720800000000000000
+      internalID: 2870731071188455101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_55
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 705
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f368e187a1da8fd0800000000000000
+      internalID: -2338826539096316936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_56
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 691
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657afc82feb0723d0800000000000000
+      internalID: -3231601085805254826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_57
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 694
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872f1e1301ebbb590800000000000000
+      internalID: -7657317764647751048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_58
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 680
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28ea8c83f4cf4290800000000000000
+      internalID: -7903882270697920468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_59
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 532
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07a231574e638f50800000000000000
+      internalID: 6882465908136257295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_60
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 532
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf23a00963571710800000000000000
+      internalID: 1663890297784053724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_61
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 530
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471a704925042c610800000000000000
+      internalID: 1639943937731305844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_62
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 527
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28dbd02c9e70ed50800000000000000
+      internalID: 6764545849341761583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_63
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 621
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c613fc555410c60800000000000000
+      internalID: 7782577865923587182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_64
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 546
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2ebc1532bc6fe10800000000000000
+      internalID: 2231194017965269705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_65
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 562
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e5ebe4a2a054950800000000000000
+      internalID: 6432558819594624588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_66
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 529
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e4c1814a6fd3e90800000000000000
+      internalID: -7044203057498010081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_67
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 546
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a056a7523cca0ef0800000000000000
+      internalID: -141075921717800799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_68
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 562
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f788c7d03777d7d80800000000000000
+      internalID: -8251307606241671041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_69
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 529
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c0fe24a1309db90800000000000000
+      internalID: -7216733516557513602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_70
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 544
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d021474f7d9a3d3c0800000000000000
+      internalID: -4335935271243345395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_71
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 560
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9a7095969c6a8b0800000000000000
+      internalID: -5141200470294419039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_72
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 527
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38035048538505b20800000000000000
+      internalID: 3121091528639197315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_73
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 541
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92ec914ff058d730800000000000000
+      internalID: 4024055324303221404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_74
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 557
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a107500b0e41c00800000000000000
+      internalID: 870567674599447173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_75
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 530
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288b31ab3ef2368e0800000000000000
+      internalID: -1701463579089979262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_76
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 524
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc2ce36764c6c2d0800000000000000
+      internalID: -3258701332018877259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_77
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 516
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bf9e041fd01c4d0800000000000000
+      internalID: -3116194137336317057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_78
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 546
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9571ac7216a4bf3c0800000000000000
+      internalID: -4324781236019390631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_79
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 513
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284d9589205be9050800000000000000
+      internalID: 5809279592105104514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_80
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 471
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63570ad3e295abf50800000000000000
+      internalID: 6897923834408629558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_81
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 406
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c7e9b2c6b711620800000000000000
+      internalID: 2743109352563833939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_82
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 471
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decdc1ecf6e195db0800000000000000
+      internalID: -4802774062065722131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_83
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 406
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24edfc8875b742ff0800000000000000
+      internalID: -61788878988648894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_84
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 469
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724a2ac86bcafdec0800000000000000
+      internalID: -3539920882046426073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_85
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 404
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8b7b98a322c1c80800000000000000
+      internalID: -8350761974237775637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_86
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 466
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377033f9b78b150c0800000000000000
+      internalID: -4588683704222414989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_87
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 415
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1003c4a405c7b53f0800000000000000
+      internalID: -910997815326658559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_88
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 455
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05786b4e93e9ab50800000000000000
+      internalID: 6605060597525017871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_89
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 431
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435ccbd137f591940800000000000000
+      internalID: 5267346187211294004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_90
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 431
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4583ad35309003d80800000000000000
+      internalID: -8273102605583239084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_91
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 429
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26f949b5fd6a83a0800000000000000
+      internalID: -6662391796598180310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_92
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 426
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a716b56da86ded30800000000000000
+      internalID: 4462337899739092898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_93
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 390
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b471a28f962e450800000000000000
+      internalID: 6116567758501530415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_94
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 398
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fb9146da7cc4230800000000000000
+      internalID: 3624491347649085234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_95
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 398
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0131a68d34e05690800000000000000
+      internalID: -7615336016980659957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_96
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 396
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a608aec47bb0990800000000000000
+      internalID: -7418634420183078258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_97
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 393
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e887b21044b1ca840800000000000000
+      internalID: 5236590445616396430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_98
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 401
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b28c5d61fff9e90800000000000000
+      internalID: -7016609220878914814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_99
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 382
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c373313dc4fd61320800000000000000
+      internalID: 2528453761866872636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_100
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 294
+        width: 101
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0723e726824c8b550800000000000000
+      internalID: 6176902566668808816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_101
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 315
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edc342b5502124c0800000000000000
+      internalID: -4314131415609127453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_102
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 301
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dad28fca40c4ec0800000000000000
+      internalID: -3581482462721757934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_103
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 294
+        width: 19
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183e02dcccca1dc00800000000000000
+      internalID: 923709394202452865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_104
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 315
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a93f3b52abac830800000000000000
+      internalID: 4092287882515159639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_105
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 301
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40afd8561d54f200800000000000000
+      internalID: 212897432954970188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_106
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 292
+        width: 19
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d049f84d5d61351d0800000000000000
+      internalID: -3363319389065604083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_107
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 313
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccddc6ac7462a2060800000000000000
+      internalID: 6929393066443595212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_108
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 299
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e5a0646b72310d0800000000000000
+      internalID: -3453372825450422756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_109
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 289
+        width: 19
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b577285df42a2c290800000000000000
+      internalID: -7871550734921992357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_110
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 310
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead9aa25825357ae0800000000000000
+      internalID: -1552276049257390674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_111
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 278
+        width: 80
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f434cc13cb4ea9210800000000000000
+      internalID: 1340635336036598607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_112
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 368
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04eb7cabac5f29e30800000000000000
+      internalID: 4508936428017139264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_113
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 299
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352914e69f486c8c0800000000000000
+      internalID: -3979347013903740333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_114
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 285
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1988f2d4a9ae79dc0800000000000000
+      internalID: -3632176626010191727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_115
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 203
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4156d4fe0e1a06ff0800000000000000
+      internalID: -44858008814131948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_116
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 189
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f69d73451a0b83a0800000000000000
+      internalID: -6662220137321621768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_117
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 219
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc0867c9d6c178e0800000000000000
+      internalID: -1697356945886278453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_118
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 186
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b2808f0fe45dcb0800000000000000
+      internalID: -4839875427679327475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_119
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 203
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67051ceb22d08e670800000000000000
+      internalID: 8568112733952757878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_120
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 189
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24506906ade8dba40800000000000000
+      internalID: 5385617797979440450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_121
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 219
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c339e41a88a8080a0800000000000000
+      internalID: -6881347911195651268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_122
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 186
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c28516e102a8860800000000000000
+      internalID: 7532868641584852002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_123
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 201
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec57f2e92a1456510800000000000000
+      internalID: 1541710614138680782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_124
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 187
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e310e51fb050f0200800000000000000
+      internalID: 148342861578764606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_125
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 217
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031b3efae17cb80a0800000000000000
+      internalID: -6878185071264419536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_126
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 184
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16764292acae27a30800000000000000
+      internalID: 4211686755539380065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_127
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 198
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67de895c996e9b400800000000000000
+      internalID: 340556794962701686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_128
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 184
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc6b39aefe4f9dd0800000000000000
+      internalID: -2477174414362579745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_129
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 214
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c046d5db839ebfc40800000000000000
+      internalID: 5547283795941352460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_130
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 187
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8acff4186a412340800000000000000
+      internalID: 4837229285661985419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_131
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 173
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff692df0b05fe83c0800000000000000
+      internalID: -4355274361761786113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_132
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 245
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f3802311fe331d0800000000000000
+      internalID: -3372088838837485669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_133
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 203
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cd41e91625501a0800000000000000
+      internalID: -6843973479502128057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_134
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 170
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05bf6cd81c14c2a0800000000000000
+      internalID: -6718213851026836213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_135
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 128
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bfa2b7999dfef10800000000000000
+      internalID: 2301297187829250942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_136
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 63
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b636a4ccccd26ba00800000000000000
+      internalID: 771854743764624235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_137
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 128
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4ff43773581a430800000000000000
+      internalID: 3792458834426983606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_138
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 63
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4cddfe75e29b1f0800000000000000
+      internalID: -1028740084656126729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_139
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 126
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e754e1d6079ba510800000000000000
+      internalID: 1561507751361009640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_140
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 61
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d95c9af33db7740800000000000000
+      internalID: 5150942869212994846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_141
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 123
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1356a7ed3af89a8c0800000000000000
+      internalID: -3987498061084859087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_142
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 72
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653790af5bcbcccd0800000000000000
+      internalID: -2536445000346406058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_143
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 112
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214e7b47cce0479c0800000000000000
+      internalID: -3930500303493274606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_144
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 88
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fa4ac4dac11c1f0800000000000000
+      internalID: -1026507709422981266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_145
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 88
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4aaf24cd521b7b70800000000000000
+      internalID: 8897725682733263439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_146
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 86
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b8a893984abcb30800000000000000
+      internalID: 4308718377792867170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_147
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 83
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d76edf13ecc8d910800000000000000
+      internalID: 1862463721782011865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_148
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 47
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2f9338226d7c810800000000000000
+      internalID: 1785631220994536156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_149
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9314fd1e44bf6ae90800000000000000
+      internalID: -7014643096317116103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_150
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63507a87a43187a0800000000000000
+      internalID: -6376757703193111697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_151
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 53
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d369b811c3dbacbf0800000000000000
+      internalID: -303221959204039107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_152
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 50
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95143226f6ccf7cc0800000000000000
+      internalID: -3711022789170085543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_153
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 58
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf404d54bf191be0800000000000000
+      internalID: -1506137740859650121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_154
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 39
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bc18300efc969f0800000000000000
+      internalID: -474619724672414961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_155
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 30
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2e1eca14ae1a6d0800000000000000
+      internalID: -2980843910548299078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_156
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 30
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2f4017cf9f8d7b0800000000000000
+      internalID: -5199130907176013139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_157
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 28
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4351dec970435cb0800000000000000
+      internalID: -4876483079607069877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_158
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 25
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b69cbbbf7dbae80800000000000000
+      internalID: -8166196023118959727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raindrops2_Background_159
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 14
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb610799a89744cf0800000000000000
+      internalID: -268956441548679489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Raindrops2_Background_0: -3035054077307895075
+      Raindrops2_Background_1: 2124205987341261225
+      Raindrops2_Background_10: -3854191873915127071
+      Raindrops2_Background_100: 6176902566668808816
+      Raindrops2_Background_101: -4314131415609127453
+      Raindrops2_Background_102: -3581482462721757934
+      Raindrops2_Background_103: 923709394202452865
+      Raindrops2_Background_104: 4092287882515159639
+      Raindrops2_Background_105: 212897432954970188
+      Raindrops2_Background_106: -3363319389065604083
+      Raindrops2_Background_107: 6929393066443595212
+      Raindrops2_Background_108: -3453372825450422756
+      Raindrops2_Background_109: -7871550734921992357
+      Raindrops2_Background_11: 1177402809332385163
+      Raindrops2_Background_110: -1552276049257390674
+      Raindrops2_Background_111: 1340635336036598607
+      Raindrops2_Background_112: 4508936428017139264
+      Raindrops2_Background_113: -3979347013903740333
+      Raindrops2_Background_114: -3632176626010191727
+      Raindrops2_Background_115: -44858008814131948
+      Raindrops2_Background_116: -6662220137321621768
+      Raindrops2_Background_117: -1697356945886278453
+      Raindrops2_Background_118: -4839875427679327475
+      Raindrops2_Background_119: 8568112733952757878
+      Raindrops2_Background_12: -1707303903939534091
+      Raindrops2_Background_120: 5385617797979440450
+      Raindrops2_Background_121: -6881347911195651268
+      Raindrops2_Background_122: 7532868641584852002
+      Raindrops2_Background_123: 1541710614138680782
+      Raindrops2_Background_124: 148342861578764606
+      Raindrops2_Background_125: -6878185071264419536
+      Raindrops2_Background_126: 4211686755539380065
+      Raindrops2_Background_127: 340556794962701686
+      Raindrops2_Background_128: -2477174414362579745
+      Raindrops2_Background_129: 5547283795941352460
+      Raindrops2_Background_13: 3196405072308515664
+      Raindrops2_Background_130: 4837229285661985419
+      Raindrops2_Background_131: -4355274361761786113
+      Raindrops2_Background_132: -3372088838837485669
+      Raindrops2_Background_133: -6843973479502128057
+      Raindrops2_Background_134: -6718213851026836213
+      Raindrops2_Background_135: 2301297187829250942
+      Raindrops2_Background_136: 771854743764624235
+      Raindrops2_Background_137: 3792458834426983606
+      Raindrops2_Background_138: -1028740084656126729
+      Raindrops2_Background_139: 1561507751361009640
+      Raindrops2_Background_14: 7356178743392452566
+      Raindrops2_Background_140: 5150942869212994846
+      Raindrops2_Background_141: -3987498061084859087
+      Raindrops2_Background_142: -2536445000346406058
+      Raindrops2_Background_143: -3930500303493274606
+      Raindrops2_Background_144: -1026507709422981266
+      Raindrops2_Background_145: 8897725682733263439
+      Raindrops2_Background_146: 4308718377792867170
+      Raindrops2_Background_147: 1862463721782011865
+      Raindrops2_Background_148: 1785631220994536156
+      Raindrops2_Background_149: -7014643096317116103
+      Raindrops2_Background_15: -4778487178776739287
+      Raindrops2_Background_150: -6376757703193111697
+      Raindrops2_Background_151: -303221959204039107
+      Raindrops2_Background_152: -3711022789170085543
+      Raindrops2_Background_153: -1506137740859650121
+      Raindrops2_Background_154: -474619724672414961
+      Raindrops2_Background_155: -2980843910548299078
+      Raindrops2_Background_156: -5199130907176013139
+      Raindrops2_Background_157: -4876483079607069877
+      Raindrops2_Background_158: -8166196023118959727
+      Raindrops2_Background_159: -268956441548679489
+      Raindrops2_Background_16: -7110031023777079653
+      Raindrops2_Background_17: 2000225873400145791
+      Raindrops2_Background_18: 4395675752081543767
+      Raindrops2_Background_19: -7085405962537813677
+      Raindrops2_Background_2: -1401305504783650728
+      Raindrops2_Background_20: -8579725698776232595
+      Raindrops2_Background_21: 4715986638791594882
+      Raindrops2_Background_22: -5820182575042130931
+      Raindrops2_Background_23: 8635220682858442678
+      Raindrops2_Background_24: 9075805641186347902
+      Raindrops2_Background_25: 1728260881974090182
+      Raindrops2_Background_26: 8523315469648676412
+      Raindrops2_Background_27: -1408789779683546318
+      Raindrops2_Background_28: -1337441701934132123
+      Raindrops2_Background_29: 616392761642797256
+      Raindrops2_Background_3: -6782939683835873141
+      Raindrops2_Background_30: -3098183563847555737
+      Raindrops2_Background_31: -3813819600632197097
+      Raindrops2_Background_32: -4756691642229136494
+      Raindrops2_Background_33: 7316662738672754154
+      Raindrops2_Background_34: -3624323433697119604
+      Raindrops2_Background_35: 7149852218204404265
+      Raindrops2_Background_36: 7117332518874535647
+      Raindrops2_Background_37: -5782081551858964202
+      Raindrops2_Background_38: -6364439648789767116
+      Raindrops2_Background_39: -4341645047979466232
+      Raindrops2_Background_4: -4444253813353298134
+      Raindrops2_Background_40: -1524875690085555393
+      Raindrops2_Background_41: 158441836009260306
+      Raindrops2_Background_42: 7012673834486296037
+      Raindrops2_Background_43: 8146069525847063858
+      Raindrops2_Background_44: -5606595273181116486
+      Raindrops2_Background_45: 2591474939568671944
+      Raindrops2_Background_46: -3552054900151138340
+      Raindrops2_Background_47: -4438503623710012564
+      Raindrops2_Background_48: 1121462868146926463
+      Raindrops2_Background_49: -8576277510474940255
+      Raindrops2_Background_5: 7943716982741203643
+      Raindrops2_Background_50: -1572015557802448111
+      Raindrops2_Background_51: 1030929153360923783
+      Raindrops2_Background_52: 3820838438894021871
+      Raindrops2_Background_53: -4464904607542614464
+      Raindrops2_Background_54: 2870731071188455101
+      Raindrops2_Background_55: -2338826539096316936
+      Raindrops2_Background_56: -3231601085805254826
+      Raindrops2_Background_57: -7657317764647751048
+      Raindrops2_Background_58: -7903882270697920468
+      Raindrops2_Background_59: 6882465908136257295
+      Raindrops2_Background_6: 7795749958366269363
+      Raindrops2_Background_60: 1663890297784053724
+      Raindrops2_Background_61: 1639943937731305844
+      Raindrops2_Background_62: 6764545849341761583
+      Raindrops2_Background_63: 7782577865923587182
+      Raindrops2_Background_64: 2231194017965269705
+      Raindrops2_Background_65: 6432558819594624588
+      Raindrops2_Background_66: -7044203057498010081
+      Raindrops2_Background_67: -141075921717800799
+      Raindrops2_Background_68: -8251307606241671041
+      Raindrops2_Background_69: -7216733516557513602
+      Raindrops2_Background_7: 5125121427415851311
+      Raindrops2_Background_70: -4335935271243345395
+      Raindrops2_Background_71: -5141200470294419039
+      Raindrops2_Background_72: 3121091528639197315
+      Raindrops2_Background_73: 4024055324303221404
+      Raindrops2_Background_74: 870567674599447173
+      Raindrops2_Background_75: -1701463579089979262
+      Raindrops2_Background_76: -3258701332018877259
+      Raindrops2_Background_77: -3116194137336317057
+      Raindrops2_Background_78: -4324781236019390631
+      Raindrops2_Background_79: 5809279592105104514
+      Raindrops2_Background_8: -6743011981103353144
+      Raindrops2_Background_80: 6897923834408629558
+      Raindrops2_Background_81: 2743109352563833939
+      Raindrops2_Background_82: -4802774062065722131
+      Raindrops2_Background_83: -61788878988648894
+      Raindrops2_Background_84: -3539920882046426073
+      Raindrops2_Background_85: -8350761974237775637
+      Raindrops2_Background_86: -4588683704222414989
+      Raindrops2_Background_87: -910997815326658559
+      Raindrops2_Background_88: 6605060597525017871
+      Raindrops2_Background_89: 5267346187211294004
+      Raindrops2_Background_9: -439597305754850127
+      Raindrops2_Background_90: -8273102605583239084
+      Raindrops2_Background_91: -6662391796598180310
+      Raindrops2_Background_92: 4462337899739092898
+      Raindrops2_Background_93: 6116567758501530415
+      Raindrops2_Background_94: 3624491347649085234
+      Raindrops2_Background_95: -7615336016980659957
+      Raindrops2_Background_96: -7418634420183078258
+      Raindrops2_Background_97: 5236590445616396430
+      Raindrops2_Background_98: -7016609220878914814
+      Raindrops2_Background_99: 2528453761866872636
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

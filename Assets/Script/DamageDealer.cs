@@ -41,7 +41,10 @@ public class DamageDealer : MonoBehaviour
     [Header("Mode")]
     [SerializeField] private bool m_UseTrigger = true;
 
-    [Header("Knockback (collision mode only)")]
+    [Header("Feedback")]
+    [SerializeField] private DamagePopup m_DamagePopupPrefab;
+
+    [Header("Knockback")]
     [SerializeField] private float m_KnockbackForce = 8f;
 
     private void Awake()
@@ -72,17 +75,22 @@ public class DamageDealer : MonoBehaviour
     {
         if ((m_TargetLayer & (1 << target.layer)) == 0) return false;
 
-        if (isBossAttack)
-        {
-            if (LoadSceneManager.Instance != null)
-                LoadSceneManager.Instance.DelayedReload();
-            return true;
-        }
-
         var damageable = target.GetComponent<IDamageable>();
         if (damageable == null) return false;
 
         damageable.TakeDamage(EffectiveDamage);
+
+        if (m_DamagePopupPrefab != null)
+            DamagePopup.Spawn(m_DamagePopupPrefab, target.transform.position, EffectiveDamage);
+
+        if (isBossAttack && LoadSceneManager.Instance != null)
+            LoadSceneManager.Instance.DelayedReload();
+
+        return true;
+
+        if (m_DamagePopupPrefab != null)
+            DamagePopup.Spawn(m_DamagePopupPrefab, target.transform.position, EffectiveDamage);
+
         return true;
     }
 }

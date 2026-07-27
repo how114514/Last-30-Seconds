@@ -831,24 +831,20 @@ MonoBehaviour:
     currentLevel: 0
     stages:
     - floatValue: 0
-      intValue: 1
+      intValue: 2
       boolValue: 0
       price: 0
     - floatValue: 0
-      intValue: 2
-      boolValue: 0
-      price: 26
-    - floatValue: 0
-      intValue: 3
+      intValue: 4
       boolValue: 0
       price: 188
     - floatValue: 0
-      intValue: 4
+      intValue: 6
       boolValue: 0
-      price: 1380
+      price: 1925
   enemyVariety:
     dimensionName: Enemy Evolution
-    description: Introduce new enemy types with unique abilities. Stronger enemies
+    description: Introduce new enemy types and unlock powerful bosses. Stronger enemies
       provide greater rewards. This upgrade can be reverted.
     type: 1
     currentLevel: 0
@@ -900,7 +896,7 @@ MonoBehaviour:
     - floatValue: 0
       intValue: 11
       boolValue: 0
-      price: 13
+      price: 135
     - floatValue: 0
       intValue: 12
       boolValue: 0
@@ -958,12 +954,12 @@ MonoBehaviour:
     - floatValue: 0
       intValue: 1
       boolValue: 0
-      price: 7500
+      price: 15000
     - floatValue: 0
       intValue: 2
       boolValue: 0
-      price: 15000
+      price: 30000
     - floatValue: 0
       intValue: 3
       boolValue: 0
-      price: 30000
+      price: 60000

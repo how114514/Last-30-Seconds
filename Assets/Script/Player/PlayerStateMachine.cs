@@ -60,7 +60,7 @@ public class PlayerStateMachine : MonoBehaviour
     private void Update()
     {
         if (!m_Initialized) return;
-        if (GameManager.IsGameOver) return;
+        if (!GameManager.HasStarted || GameManager.IsGameOver) return;
         m_CurrentState?.Update();
     }
 

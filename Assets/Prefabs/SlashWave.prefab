@@ -186,6 +186,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   m_UseTrigger: 1
+  m_DamagePopupPrefab: {fileID: 4221043676588385328, guid: edcd8266730afb944a7cd8fa410fc8bd, type: 3}
   m_KnockbackForce: 0
 --- !u!114 &8254048194195410774
 MonoBehaviour:

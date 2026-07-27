@@ -9,15 +9,20 @@ public static class GameManager
     public static bool IsGameOver { get; set; }
     public static bool BossAlreadyDead { get; set; }
 
-    /// <summary>How many bosses the player has killed (0-3).</summary>
+    /// <summary>How many unique boss levels the player has beaten (0-3).</summary>
     public static int BossesDefeated { get; private set; }
+
+    /// <summary>Total number of boss kills (not unique).</summary>
+    public static int TotalBossKills { get; private set; }
 
     /// <summary>Called when a boss is killed.</summary>
     public static void BossDefeated()
     {
+        TotalBossKills++;
+
         int bossLevel = RuntimeData.Instance != null ? RuntimeData.Instance.enemyBoss : 0;
         if (bossLevel > BossesDefeated)
-            BossesDefeated = bossLevel; // only count unique levels beaten
+            BossesDefeated = bossLevel;
 
         BossAlreadyDead = true;
 

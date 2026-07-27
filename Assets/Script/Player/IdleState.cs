@@ -1,5 +1,3 @@
-using UnityEngine;
-
 /// <summary>
 /// Idle state: plays idle animation, watches for movement input to transition to Move.
 /// </summary>

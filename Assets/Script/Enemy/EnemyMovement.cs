@@ -16,14 +16,21 @@ public class EnemyMovement : MonoBehaviour
 
     public void SetMoveSpeed(float speed) => m_MoveSpeed = speed;
 
+    /// <summary>Briefly stun without moving.</summary>
+    public void Stun(float duration = 0.1f)
+    {
+        m_StunTimer = duration;
+        if (m_Rigidbody != null)
+            m_Rigidbody.linearVelocity = Vector2.zero;
+    }
+
     /// <summary>Apply knockback away from player and stun briefly.</summary>
     public void ApplyKnockback(Vector2 direction, float force)
     {
         if (m_Rigidbody == null) return;
 
-        m_StunTimer = 0.2f;
-        m_Rigidbody.linearVelocity = Vector2.zero;
-        m_Rigidbody.AddForce(direction * force, ForceMode2D.Impulse);
+        m_StunTimer = 0.15f;
+        m_Rigidbody.linearVelocity = direction * force;
     }
 
     private void Start()

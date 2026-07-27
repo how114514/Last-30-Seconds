@@ -22,6 +22,7 @@ public class UpgradePanel : MonoBehaviour
     [SerializeField] private TMP_Text m_DescriptionText;
     [SerializeField] private TMP_Text m_StageText;
     [SerializeField] private TMP_Text m_PriceText;
+    [SerializeField] private TMP_Text m_ValueText;
 
     [Header("Select Buttons")]
     [SerializeField] private Button[] m_SelectButtons = new Button[12];
@@ -70,7 +71,7 @@ public class UpgradePanel : MonoBehaviour
         m_CloseButton?.onClick.RemoveAllListeners();
         m_CloseButton?.onClick.AddListener(OnCloseClicked);
 
-        SelectButton(0);
+        SelectButton(11);
     }
 
     private void PlayClick()
@@ -138,6 +139,20 @@ public class UpgradePanel : MonoBehaviour
         if (m_StageText != null)
             m_StageText.text = $"{m_SelectedDim.currentLevel}/{maxLevel}";
 
+        if (m_ValueText != null)
+        {
+            string cur = FormatValue(m_SelectedDim, m_SelectedDim.currentLevel);
+            if (isMaxed)
+            {
+                m_ValueText.text = cur;
+            }
+            else
+            {
+                string next = FormatValue(m_SelectedDim, m_SelectedDim.currentLevel + 1);
+                m_ValueText.text = $"{cur} -> {next}";
+            }
+        }
+
         if (m_PriceText != null)
         {
             if (bossLocked)
@@ -183,6 +198,7 @@ public class UpgradePanel : MonoBehaviour
 
         PlayClick();
         m_SelectedDim.currentLevel = nextLevel;
+        GameStats.OnUpgradePurchased();
 
         if (RuntimeData.Instance != null)
             RuntimeData.Instance.SyncFromUpgradeData();
@@ -274,6 +290,19 @@ public class UpgradePanel : MonoBehaviour
                      && slash.stages[slash.currentLevel].boolValue;
 
         return unlocked ? m_UpgradeData.slashWaveDamage : slash;
+    }
+
+    private string FormatValue(UpgradeDimension dim, int level)
+    {
+        if (dim == null || level < 0 || level >= dim.stages.Length) return "-";
+        var stage = dim.stages[level];
+        return dim.type switch
+        {
+            DimensionType.Float => stage.floatValue.ToString("0.##"),
+            DimensionType.Int   => stage.intValue.ToString(),
+            DimensionType.Bool  => stage.boolValue ? "ON" : "OFF",
+            _ => "-"
+        };
     }
 
     /// <summary>enemyVariety before max, enemyBoss after.</summary>

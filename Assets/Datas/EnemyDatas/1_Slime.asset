@@ -15,8 +15,8 @@ MonoBehaviour:
   enemyName: Slime
   sprite: {fileID: -2054462289083631983, guid: 4ddd41d5f2f35bd41aa60d6e7843f272, type: 3}
   hp: 1
-  damage: 0
-  moveSpeed: 1
+  damage: 1
+  moveSpeed: 2.5
   scoreReward: 1
   spawnWeight: 3276247
   isBoss: 0

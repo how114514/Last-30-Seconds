@@ -34,6 +34,7 @@ public class BossSpawner : MonoBehaviour
 
         var pos = m_SpawnPoint != null ? m_SpawnPoint.position : transform.position;
         var boss = Instantiate(m_Prefab, pos, Quaternion.identity);
+        boss.tag = "Boss";
 
         boss.transform.localScale = Vector3.one * 3f;
 

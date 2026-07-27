@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   enemyName: Boss1
   sprite: {fileID: 3787282610211549765, guid: 4ddd41d5f2f35bd41aa60d6e7843f272, type: 3}
-  hp: 27000
+  hp: 36000
   damage: 1000
-  moveSpeed: 0.5
-  scoreReward: 3000
+  moveSpeed: 2
+  scoreReward: 7500
   spawnWeight: 1
   isBoss: 1

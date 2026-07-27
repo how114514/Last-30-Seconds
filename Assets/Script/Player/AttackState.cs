@@ -1,9 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Attack state: plays attack animation, blocks movement + facing.
-/// When animation finishes: if a buffered attack was pressed, re-enter Attack;
-/// otherwise return to Idle.
+/// Attack state: plays attack, locks facing. Movement cancels into Move.
+/// Generates slash wave on animation end; buffers for chaining.
 /// </summary>
 public class AttackState : IPlayerState
 {
@@ -18,9 +17,9 @@ public class AttackState : IPlayerState
 
     public void Enter()
     {
-        m_Fsm.Movement.BlockMovement();
         m_Fsm.Animation.LockFacing();
         m_Fsm.Animation.PlayAttack();
+        m_Fsm.Movement.SetSpeedOverride(2f);
     }
 
     public void Update()
@@ -29,7 +28,6 @@ public class AttackState : IPlayerState
 
         if (stateInfo.shortNameHash == s_AttackHash && stateInfo.normalizedTime >= 1f)
         {
-            // Animation finished → always spawn slash wave
             Player.Instance.SpawnSlashWave();
 
             if (m_Fsm.HasAttackBuffered)
@@ -46,7 +44,7 @@ public class AttackState : IPlayerState
 
     public void Exit()
     {
-        m_Fsm.Movement.UnblockMovement();
         m_Fsm.Animation.UnlockFacing();
+        m_Fsm.Movement.ClearSpeedOverride();
     }
 }

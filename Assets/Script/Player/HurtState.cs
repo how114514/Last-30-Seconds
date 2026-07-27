@@ -1,9 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Hurt state: triggered when the player takes damage.
-/// Plays hurt animation, blocks movement + facing,
-/// returns to Idle when the animation finishes.
+/// Hurt state: plays hurt animation, locks facing. Movement cancels into Move.
 /// </summary>
 public class HurtState : IPlayerState
 {
@@ -18,7 +16,6 @@ public class HurtState : IPlayerState
 
     public void Enter()
     {
-        m_Fsm.Movement.BlockMovement();
         m_Fsm.Animation.LockFacing();
         m_Fsm.Animation.PlayHurt();
     }
@@ -43,7 +40,6 @@ public class HurtState : IPlayerState
 
     public void Exit()
     {
-        m_Fsm.Movement.UnblockMovement();
         m_Fsm.Animation.UnlockFacing();
     }
 }
