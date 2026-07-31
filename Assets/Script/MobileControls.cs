@@ -28,6 +28,27 @@ public class MobileControls : MonoBehaviour
         Instance = this;
     }
 
+    /// <summary>Reset all flags and button states (called on scene reload).</summary>
+    public void ResetAll()
+    {
+        LeftHeld = false;
+        RightHeld = false;
+        AttackPressed = false;
+
+        ResetButton(m_MoveLeftButton);
+        ResetButton(m_MoveRightButton);
+        ResetButton(m_AttackButton);
+    }
+
+    private void ResetButton(Button btn)
+    {
+        if (btn != null)
+        {
+            var handlers = btn.GetComponents<MultiTouchHandler>();
+            foreach (var h in handlers) h.ResetState();
+        }
+    }
+
     private void Start()
     {
         if (!m_IsMobile) return;
@@ -92,6 +113,11 @@ public class MultiTouchHandler : MonoBehaviour, IPointerDownHandler, IPointerUpH
     public event System.Action<int, PointerEventData> OnUpId;
 
     private int m_PointerId = -1;
+
+    public void ResetState()
+    {
+        m_PointerId = -1;
+    }
 
     public void OnPointerDown(PointerEventData d)
     {

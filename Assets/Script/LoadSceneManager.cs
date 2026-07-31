@@ -62,6 +62,9 @@ public class LoadSceneManager : MonoBehaviour
         GameManager.IsGameOver = false;
         GameManager.HasStarted  = false;
         GameManager.BossAlreadyDead = false;
+
+        if (MobileControls.Instance != null)
+            MobileControls.Instance.ResetAll();
         if (m_UpgradePanel != null) m_UpgradePanel.ClosePanel();
 
         if (RuntimeData.Instance != null) RuntimeData.Instance.SyncFromUpgradeData();
