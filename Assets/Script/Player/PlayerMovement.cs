@@ -21,11 +21,18 @@ public class PlayerMovement : MonoBehaviour
     public void SetSpeedOverride(float speed) => m_SpeedOverride = speed;
     public void ClearSpeedOverride() => m_SpeedOverride = -1f;
 
-    /// <summary>Horizontal-only input (A/D keys).</summary>
+    /// <summary>Horizontal-only input (A/D keys or mobile buttons).</summary>
     public Vector2 MoveInput
     {
         get
         {
+            if (MobileControls.Instance != null && MobileControls.Instance.IsMobile)
+            {
+                float x = 0f;
+                if (MobileControls.Instance.LeftHeld)  x -= 1f;
+                if (MobileControls.Instance.RightHeld) x += 1f;
+                return new Vector2(x, 0f);
+            }
             var raw = m_MoveAction?.ReadValue<Vector2>() ?? Vector2.zero;
             return new Vector2(raw.x, 0f);
         }

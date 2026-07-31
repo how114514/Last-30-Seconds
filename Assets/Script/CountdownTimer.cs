@@ -92,10 +92,11 @@ public class CountdownTimer : MonoBehaviour
     {
         if (!m_Running)
         {
-            if (!GameManager.IsGameOver
-                && Keyboard.current != null
-                && Keyboard.current.anyKey.wasPressedThisFrame)
+            bool anyKey = Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
+            bool mobileTap = MobileControls.Instance != null && MobileControls.Instance.IsMobile && MobileControls.Instance.AttackPressed;
+            if (!GameManager.IsGameOver && (anyKey || mobileTap))
             {
+                if (mobileTap) MobileControls.Instance.ConsumeAttack();
                 m_Running = true;
                 GameManager.HasStarted = true;
                 GameStats.OnRunStart();

@@ -57,13 +57,6 @@ public class PlayerStateMachine : MonoBehaviour
         m_Initialized = true;
     }
 
-    private void Update()
-    {
-        if (!m_Initialized) return;
-        if (!GameManager.HasStarted || GameManager.IsGameOver) return;
-        m_CurrentState?.Update();
-    }
-
     private void OnDestroy()
     {
         if (m_InputActions != null)
@@ -79,6 +72,20 @@ public class PlayerStateMachine : MonoBehaviour
         m_CurrentStateType = type;
         m_CurrentState = m_States[type];
         m_CurrentState?.Enter();
+    }
+
+    private void Update()
+    {
+        if (!m_Initialized) return;
+        if (!GameManager.HasStarted || GameManager.IsGameOver) return;
+
+        if (MobileControls.Instance != null && MobileControls.Instance.IsMobile && MobileControls.Instance.AttackPressed)
+        {
+            MobileControls.Instance.ConsumeAttack();
+            OnAttackPerformed(default);
+        }
+
+        m_CurrentState?.Update();
     }
 
     private void OnAttackPerformed(InputAction.CallbackContext context)
